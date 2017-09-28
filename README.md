@@ -1,5 +1,7 @@
 # Redmineで始める異世界人心掌握術
 
+[Show GitHub Pages](https://8amjp.github.io/redmine-fantasy/)
+
 ## チケットを制する者が異世界を制す!?貴方もプロジェクトマネジメント!
 
 藤倉紅子、26歳。職業、SE。
