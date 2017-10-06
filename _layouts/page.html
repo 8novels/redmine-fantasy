@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>{{ page.title | escape }} | {{ site.title | escape }}</title>
+<meta name="description" content="{{ site.description | escape | strip }}">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta property="og:url" content="{{ page.url | absolute_url }}" />
+<meta property="og:title" content="{{ page.title | escape }} | {{ site.title | escape }}" />
+<meta property="og:description" content="{{ site.description | escape | strip }}" />
+<meta property="og:type" content="{{ site.type }}" />
+<meta property="og:image" content="{{ site.image }}" />
+<meta name="twitter:card" content="{{ site.card }}" />
+<meta name="twitter:site" content="@{{ site.twitter_username }}" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+<link rel="stylesheet" href="https://8amjp.github.io/css/page.css">
+{% if jekyll.environment == 'production' and site.google_analytics %}
+  {% include google-analytics.html %}
+{% endif %}
+{% assign items = site.pages %}
+{% for item in items %}
+  {% if item.path == page.path %}
+    {% assign prev_index = forloop.index0 | minus: 1 %}{% if items[prev_index].title %}{% assign prev = items[prev_index] %}{% endif %}
+    {% assign next_index = forloop.index0 | plus: 1  %}{% if items[next_index].title %}{% assign next = items[next_index] %}{% endif %}
+    {% break %}
+  {% endif %}
+{% endfor %}
+{% if prev %}
+<link rel="prev" href="{{ prev.url | relative_url }}">
+{% endif %}
+{% if next %}
+<link rel="next" href="{{ next.url | relative_url }}">
+{% endif %}
+</head>
+<body>
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.10";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<nav class="navbar navbar-expand-sm navbar-light bg-light">
+  <a class="navbar-brand" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#topnav" aria-controls="topnav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="topnav">
+    <ul class="navbar-nav">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="{{ "/" | relative_url }}" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          目次
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+      {% assign items = site.pages %}
+      {% for item in items %}
+        {% if item.title and item.url != "/" %}
+          <a class="dropdown-item" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+        {% endif %}
+      {% endfor %}
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+{% if prev %}
+<div class="card text-center bg-light">
+  <div class="card-body">
+    <p class="card-text"><a href="{{ prev.url | relative_url }}">&lt; {{ prev.title }}</a></p>
+  </div>
+</div>
+{% endif %}
+<div class="container">
+  <article>
+    {{ content }}
+  </article>
+  <footer class="text-right">
+    <a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="basic-label-counter" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+    <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    <div class="fb-like" data-href="{{ page.url | absolute_url }}" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+  </footer>
+</div>
+{% if next %}
+<div class="card text-center bg-light">
+  <div class="card-body">
+    <p class="card-text"><a href="{{ next.url | relative_url }}">{{ next.title }} &gt;</a></p>
+  </div>
+</div>
+{% endif %}
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+</body>
+</html>
