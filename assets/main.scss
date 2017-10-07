@@ -3,18 +3,12 @@
 
 @import "minima";
 
-#README.md h1 {
+article {
 }
-#README.md h2,
-#README.md h3,
-#README.md h4,
-#README.md h5,
-#README.md h6 {
-  font-size: medium;
-}
-
 article h1 {
   font-size: medium;
   text-align: center;
   margin: 3em 0 2em;
+}
+article p {
 }
