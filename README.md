@@ -107,3 +107,8 @@ No Ticket, No Work! な異世界ファンタジー、ここにロールアウト
 * #60
 
 **エピローグ**
+
+
+## Author
+
+[足羽川永都](https://github.com/8amjp)
