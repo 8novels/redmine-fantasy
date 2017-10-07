@@ -61,26 +61,24 @@
   </section>
   {% endif %}
   <hr>
-  <footer class="py-3">
-    <h2 class="h6">{{ site.title | escape }}</h2>
-    <div class="row">
-      <div class="col-sm-12 col-md-9">
-        <p><small>作者</small> {{ site.author | escape }}</p>
-        <ul class="list-unstyled">
-          {% if site.github_username %}<li>{% include icon-github.html username=site.github_username %}</li>{% endif %}
-          {% if site.twitter_username %}<li>{% include icon-twitter.html username=site.twitter_username %}</li>{% endif %}
-        </ul>
+  <footer class="row py-3">
+    <div class="col-sm-12 col-md-9">
+      <h2 class="h6">{{ site.title | escape }}</h2>
+      <p>{{ site.author | escape }}</p>
+      <ul class="list-unstyled">
+        {% if site.github_username %}<li>{% include icon-github.html username=site.github_username %}</li>{% endif %}
+        {% if site.twitter_username %}<li>{% include icon-twitter.html username=site.twitter_username %}</li>{% endif %}
+      </ul>
+    </div>
+    <div class="col-sm-12 col-md-3">
+      <div>
+        <a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="basic-label-counter" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
       </div>
-      <div class="col-sm-12 col-md-3">
-        <div>
-          <a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="basic-label-counter" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
-        </div>
-        <div>
-          <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-        </div>
-        <div>
-          <div class="fb-like" data-href="{{ "/" | absolute_url }}" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
-        </div>
+      <div>
+        <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+      </div>
+      <div>
+        <div class="fb-like" data-href="{{ "/" | absolute_url }}" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
       </div>
     </div>
   </footer>
