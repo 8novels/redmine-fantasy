@@ -16,3 +16,6 @@ google_analytics: UA-41627578-3
 # Build settings
 markdown: kramdown
 theme: minima
+
+kramdown:
+  input: GFM
