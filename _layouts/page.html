@@ -42,28 +42,13 @@
   js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.10";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
-<nav class="navbar sticky-top navbar-expand-xl navbar-light bg-white">
-  <a class="navbar-brand" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#topnav" aria-controls="topnav" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse text-right" id="topnav">
+<nav class="navbar sticky-top navbar-expand-xl navbar-light bg-white justify-content-between">
+  <a class="navbar-brand" href="{{ "/" | relative_url }}">{{ site.title | truncate: 8 }}</a>
+  <div>
     <a href="https://github.com/{{ site.github_username }}{{ "/" | relative_url }}blob/master/{{ page.path }}" id="view-on-github" class="btn btn-outline-primary btn-sm" role="button"><span>View on GitHub</span></a>
-    <ul class="navbar-nav">
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="{{ "/" | relative_url }}" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          目次
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-      {% assign items = site.pages %}
-      {% for item in items %}
-        {% if item.title and item.url != "/" %}
-          <a class="dropdown-item" href="{{ item.url | relative_url }}">{{ item.title }}</a>
-        {% endif %}
-      {% endfor %}
-        </div>
-      </li>
-    </ul>
+    <button type="button" class="btn btn-outline-primary btn-sm" data-toggle="modal" data-target="#modal">
+      <span class="navbar-toggler-icon"></span>
+    </button>
   </div>
 </nav>
 {% if prev %}
@@ -77,7 +62,9 @@
   </article>
   <div class="d-flex justify-content-center align-items-end py-5">
     <a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="basic-label-counter" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+    <span class="p-1"></span>
     <a href="https://twitter.com/share" class="twitter-share-button">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+    <span class="p-1"></span>
     <div class="fb-like" data-href="{{ page.url | absolute_url }}" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
   </div>
 </div>
@@ -86,6 +73,37 @@
   <a class="btn btn-light btn-block btn-lg" role="button" href="{{ next.url | relative_url }}">{{ next.title }} &gt;</a>
 </footer>
 {% endif %}
+
+<!-- Modal -->
+<div class="modal fade" id="modal" tabindex="-1" role="dialog" aria-labelledby="modaltitle" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modaltitle">目次</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <header>
+          <h1 class="h6"><a href="{{ "/" | relative_url }}">{{ site.title | escape }}</a></h1>
+        </header>
+        <ul class="list-unstyled">
+        {% assign items = site.pages %}
+        {% for item in items %}
+          {% if item.title and item.url != "/" %}
+            <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+          {% endif %}
+        {% endfor %}
+        </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
