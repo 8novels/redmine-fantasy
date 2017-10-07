@@ -31,14 +31,11 @@
 }(document, 'script', 'facebook-jssdk'));</script>
 <nav class="navbar navbar-expand-sm navbar-light bg-light">
   <a class="navbar-brand" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+  <a href="https://github.com/{{ site.github_username }}{{ "/" | relative_url }}" id="view-on-github" class="btn btn-outline-primary btn-sm" role="button"><span>View on GitHub</span></a>
+  <a href="https://github.com/{{ site.github_username }}{{ "/" | relative_url }}zipball/master" id="download-zip" class="btn btn-outline-primary btn-sm" role="button"><span>Download .zip</span></a>
 </nav>
 
 <div class="container">
-  <section class="text-right">
-    <a href="https://github.com/{{ site.github_username }}{{ "/" | relative_url }}" id="view-on-github" class="btn btn-outline-primary btn-sm" role="button"><span>View on GitHub</span></a>
-    <a href="https://github.com/{{ site.github_username }}{{ "/" | relative_url }}zipball/master" id="download-zip" class="btn btn-outline-primary btn-sm" role="button"><span>Download .zip</span></a>
-    <a href="https://github.com/{{ site.github_username }}{{ "/" | relative_url }}tarball/master" id="download-tar-gz" class="btn btn-outline-primary btn-sm" role="button"><span>Download .tar.gz</span></a>
-  </section>
   <section class="readme">
   {{ content }}
   </section>
