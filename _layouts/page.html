@@ -43,13 +43,10 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 <nav class="navbar sticky-top navbar-expand-xl navbar-light bg-white justify-content-between">
-  <a class="navbar-brand" href="{{ "/" | relative_url }}">{{ site.title | truncate: 15 }}</a>
-  <div>
-    <a href="https://github.com/{{ site.github_username }}{{ "/" | relative_url }}blob/master/{{ page.path }}" id="view-on-github" class="btn btn-outline-primary btn-sm" role="button"><span>View on GitHub</span></a>
-    <button type="button" class="btn btn-outline-primary btn-sm" data-toggle="modal" data-target="#modal">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-  </div>
+  <a class="navbar-brand h6" href="{{ "/" | relative_url }}">{{ site.title | truncate: 15 }}</a>
+  <button type="button" class="btn btn-outline-primary btn-sm" data-toggle="modal" data-target="#modal">
+    <span class="navbar-toggler-icon"></span>
+  </button>
 </nav>
 {% if prev %}
 <header>
@@ -85,15 +82,18 @@
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="modaltitle">目次</h5>
+        <h5 class="modal-title" id="modaltitle">
+          <a href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+        </h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        <header>
-          <h1 class="h6"><a href="{{ "/" | relative_url }}">{{ site.title | escape }}</a></h1>
+        <header class="text-right">
+          <a href="https://github.com/{{ site.github_username }}{{ "/" | relative_url }}blob/master/{{ page.path }}" id="view-on-github" class="btn btn-outline-primary btn-sm" role="button"><span>View on GitHub</span></a>
         </header>
+        <h1 class="h6">目次</h1>
         <ul class="list-unstyled">
         {% assign items = site.pages %}
         {% for item in items %}
