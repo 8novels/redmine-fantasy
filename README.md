@@ -4,9 +4,9 @@ Redmineで始める異世界人心掌握術
 ## チケットを制する者が異世界を制す!?貴方もプロジェクトマネジメント!
 
 <!-- Badges section here. -->
-[![異世界ファンタジー](https://img.shields.io/badge/%E3%82%B8%E3%83%A3%E3%83%B3%E3%83%AB-%E7%95%B0%E4%B8%96%E7%95%8C%E3%83%95%E3%82%A1%E3%83%B3%E3%82%BF%E3%82%B8%E3%83%BC-orange.svg)]
-[![長編小説](https://img.shields.io/badge/%E5%BD%A2%E5%BC%8F-%E9%95%B7%E7%B7%A8%E5%B0%8F%E8%AA%AC-orange.svg)]
-[![連載中](https://img.shields.io/badge/%E5%9F%B7%E7%AD%86%E7%8A%B6%E6%B3%81-%E9%80%A3%E8%BC%89%E4%B8%AD-red.svg)]
+![異世界ファンタジー](https://img.shields.io/badge/%E3%82%B8%E3%83%A3%E3%83%B3%E3%83%AB-%E7%95%B0%E4%B8%96%E7%95%8C%E3%83%95%E3%82%A1%E3%83%B3%E3%82%BF%E3%82%B8%E3%83%BC-orange.svg)
+![長編小説](https://img.shields.io/badge/%E5%BD%A2%E5%BC%8F-%E9%95%B7%E7%B7%A8%E5%B0%8F%E8%AA%AC-orange.svg)
+![連載中](https://img.shields.io/badge/%E5%9F%B7%E7%AD%86%E7%8A%B6%E6%B3%81-%E9%80%A3%E8%BC%89%E4%B8%AD-red.svg)
 
 これは[足羽川永都](https://github.com/8amjp)が中心となって執筆したWeb小説です。
 [GitHub Pages](https://8amjp.github.io/redmine-fantasy/)でお読みください。
