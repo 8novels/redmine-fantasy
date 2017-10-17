@@ -9,7 +9,7 @@ Redmineで始める異世界人心掌握術
 ![連載中](https://img.shields.io/badge/%E5%9F%B7%E7%AD%86%E7%8A%B6%E6%B3%81-%E9%80%A3%E8%BC%89%E4%B8%AD-red.svg)
 
 これは[足羽川永都](https://github.com/8amjp)が中心となって執筆したWeb小説です。
-[GitHub Pages](https://8amjp.github.io/redmine-fantasy/)でお読みください。
+[GitHub Pages](https://8novels.github.io/redmine-fantasy/)でお読みください。
 
 下記の小説投稿サイトでも公開しています。
 
