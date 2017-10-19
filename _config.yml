@@ -5,12 +5,13 @@ description: >
   ある日突然紅子が転移した世界は、チケットによって魔法が発動し、チケットによって魔物が出現する異世界。
   紅子はこの仕組みを構築した天才PM兼SE兼PGであるレイラの意思を受け継ぎ、彼女の娘レヴィとタッグを組んで、プロジェクト管理ソフト「Redmine」を用いて魔族をマネジメントすることに。
   No Ticket, No Work! な異世界ファンタジー、ここにロールアウト！
-image: https://8amjp.github.io/site-icon.png
+image: site-icon.png
 type: novel
 card: summary
 index: manual
 twitter_username: 8amjp
 github_username:  8amjp
+github_orgname:   8novels
 google_analytics: UA-41627578-3
 
 # Build settings

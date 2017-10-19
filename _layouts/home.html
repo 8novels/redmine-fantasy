@@ -1,40 +1,11 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-<meta charset="utf-8">
-<title>{{ site.title | escape }}</title>
-<meta name="description" content="{{ site.description | escape | strip }}">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta property="og:url" content="{{ "/" | absolute_url }}" />
-<meta property="og:title" content="{{ site.title | escape }}" />
-<meta property="og:description" content="{{ site.description | escape | strip }}" />
-<meta property="og:type" content="{{ site.type }}" />
-<meta property="og:image" content="{{ site.image }}" />
-<meta name="twitter:card" content="{{ site.card }}" />
-<meta name="twitter:site" content="@{{ site.twitter_username }}" />
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-<link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
-{% if jekyll.environment == 'production' and site.google_analytics %}
-  {% include google-analytics.html %}
-{% endif %}
-</head>
-<body>
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.10";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-<nav class="navbar sticky-top navbar-expand-xl navbar-light bg-white justify-content-between">
-  <a class="navbar-brand h6" href="{{ "/" | relative_url }}">{{ site.title | truncate: 15 }}</a>
-</nav>
+---
+layout: default
+---
+
 <div class="container">
   <section class="d-flex justify-content-end py-3">
-    <a href="https://github.com/{{ site.github_username }}{{ "/" | relative_url }}" id="view-on-github" class="btn btn-outline-primary btn-sm" role="button"><span>View on GitHub</span></a>
-    <a href="https://github.com/{{ site.github_username }}{{ "/" | relative_url }}zipball/master" id="download-zip" class="btn btn-outline-primary btn-sm" role="button"><span>Download .zip</span></a>
+    <a href="https://github.com/{{ site.github_orgname }}{{ "/" | relative_url }}" id="view-on-github" class="btn btn-outline-primary btn-sm" role="button"><span>View on GitHub</span></a>
+    <a href="https://github.com/{{ site.github_orgname }}{{ "/" | relative_url }}zipball/master" id="download-zip" class="btn btn-outline-primary btn-sm" role="button"><span>Download .zip</span></a>
   </section>
   <section id="README" class="py-3">
   {{ content }}
@@ -67,35 +38,7 @@
       </ul>
     </div>
     <div class="col-sm-12 col-md-3">
-      <div class="d-inline-flex py-1">
-        <!-- hatena -->
-        <a href="http://b.hatena.ne.jp/entry/" class="hatena-bookmark-button" data-hatena-bookmark-layout="touch-counter" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a>
-        <script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
-      </div>
-      <div class="d-inline-flex py-1">
-        <!-- twitter -->
-        <a href="https://twitter.com/share" class="twitter-share-button" data-size="large">Tweet</a>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-      </div>
-      <div class="d-inline-flex py-1">
-        <!-- facebook -->
-        <div class="fb-like" data-href="{{ page.url | absolute_url }}" data-layout="button_count" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>
-      </div>
-      <div class="d-inline-flex py-1">
-        <!-- line -->
-        <div class="line-it-button" style="display: none;" data-lang="ja" data-type="share-c" data-url="{{ page.url | absolute_url }}"></div>
-        <script src="https://d.line-scdn.net/r/web/social-plugin/js/thirdparty/loader.min.js" async="async" defer="defer"></script>
-      </div>
-      <div class="d-inline-flex py-1">
-        <!-- pocket -->
-        <a data-pocket-label="pocket" data-pocket-count="horizontal" class="pocket-btn" data-lang="en"></a>
-        <script type="text/javascript">!function(d,i){if(!d.getElementById(i)){var j=d.createElement("script");j.id=i;j.src="https://widgets.getpocket.com/v1/j/btn.js?v=1";var w=d.getElementById(i);d.body.appendChild(j);}}(document,"pocket-btn-js");</script>
-      </div>
+{% include social-buttons.html %}
     </div>
   </footer>
 </div>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-</body>
-</html>
