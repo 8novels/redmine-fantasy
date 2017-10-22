@@ -13,8 +13,8 @@ layout: default
 
 <div class="container">
   <section class="d-flex justify-content-end py-3">
-    <a href="https://github.com/{{ site.github_orgname }}{{ "/" | relative_url }}" id="view-on-github" class="btn btn-outline-primary btn-sm" role="button"><span>View on GitHub</span></a>
-    <a href="https://github.com/{{ site.github_orgname }}{{ "/" | relative_url }}zipball/master" id="download-zip" class="btn btn-outline-primary btn-sm" role="button"><span>Download .zip</span></a>
+    <a href="{{ site.github.owner_url }}{{ "/" | relative_url }}" id="view-on-github" class="btn btn-outline-primary btn-sm" role="button"><span>View on GitHub</span></a>
+    <a href="{{ site.github.owner_url }}{{ "/" | relative_url }}zipball/master" id="download-zip" class="btn btn-outline-primary btn-sm" role="button"><span>Download .zip</span></a>
   </section>
   <section id="README" class="py-3">
   {{ content }}
