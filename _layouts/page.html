@@ -11,6 +11,16 @@ layout: default
   {% endif %}
 {% endfor %}
 
+<nav class="navbar sticky-top navbar-expand-xl navbar-light justify-content-between">
+  <div>
+    <a class="btn btn-outline-primary btn-sm" role="button" href="/">{{ site.github.owner_name }}</a>
+    <a class="btn btn-outline-primary btn-sm" role="button" href="{{ "/" | relative_url }}">&lt;</a>
+  </div>
+  <button type="button" class="btn btn-outline-primary btn-sm" data-toggle="modal" data-target="#modal">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+</nav>
+
 {% if prev %}
 <header>
   <a class="btn btn-light btn-block" role="button" href="{{ prev.url | relative_url }}">&lt; {{ prev.title }}</a>

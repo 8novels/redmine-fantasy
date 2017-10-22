@@ -2,6 +2,15 @@
 layout: default
 ---
 
+<nav class="navbar sticky-top navbar-expand-xl navbar-light justify-content-between">
+  <div>
+    <a class="btn btn-outline-primary btn-sm" role="button" href="/">{{ site.github.owner_name }}</a>
+  </div>
+  <button type="button" class="btn btn-outline-primary btn-sm" data-toggle="modal" data-target="#modal">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+</nav>
+
 <div class="container">
   <section class="d-flex justify-content-end py-3">
     <a href="https://github.com/{{ site.github_orgname }}{{ "/" | relative_url }}" id="view-on-github" class="btn btn-outline-primary btn-sm" role="button"><span>View on GitHub</span></a>
