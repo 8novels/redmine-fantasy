@@ -28,17 +28,7 @@ layout: default
   </section>
   {% endif %}
   <hr>
-  <footer class="row py-3">
-    <div class="col-sm-12 col-md-9">
-      <h2 class="h6">{{ site.title | escape }}</h2>
-      <p><small>作者</small> {{ site.author | escape }}</p>
-      <ul class="list-unstyled">
-        {% if site.github_username %}<li>{% include icon-github.html username=site.github_username %}</li>{% endif %}
-        {% if site.twitter_username %}<li>{% include icon-twitter.html username=site.twitter_username %}</li>{% endif %}
-      </ul>
-    </div>
-    <div class="col-sm-12 col-md-3">
+  <footer class="py-3">
 {% include social-buttons.html %}
-    </div>
   </footer>
 </div>
