@@ -16,5 +16,3 @@ theme: minima
 
 plugins:
   - jekyll-seo-tag
-gems:
-  - jekyll-octicons
