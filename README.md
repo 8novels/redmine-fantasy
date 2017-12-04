@@ -92,16 +92,16 @@ No Ticket, No Work! な異世界ファンタジー、ここにロールアウト
 
 ### 6章 No Ticket, No Wonderful Life!
 
-* [#51 決戦の火蓋](./episodes/052.md)
+* [#51 インシデント](./episodes/052.md)
 * [#52 ミーティングを行います](./episodes/053.md)
-* [#53 作戦開始](./episodes/054.md)
+* [#53 進行中《Assigned》](./episodes/054.md)
 * #54 進捗率:20％、担当者:ジーナ
 * #55 進捗率:40％、担当者:ジェミィ
 * #56 進捗率:60％、担当者:ライカ
 * #57 進捗率:80％、担当者:レヴィ
 * #58 担当者:紅子
 * #59 No Ticket, No Wonderful Life!
-* #60 暗転
+* #60 継続不可能《Rejected》
 
 ### エピローグ
 
