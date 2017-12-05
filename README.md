@@ -97,7 +97,7 @@ No Ticket, No Work! な異世界ファンタジー、ここにロールアウト
 * [#53 進行中《Assigned》](./episodes/054.md)
 * [#54 進捗率:20％、担当者:ジーナ](./episodes/055.md)
 * #55 進捗率:40％、担当者:ジェミィ
-* #56 進捗率:60％、担当者:ライカ
+* [#56 進捗率:60％、担当者:ライカ](./episodes/057.md)
 * [#57 進捗率:80％、担当者:レヴィ](./episodes/058.md)
 * #58 担当者:紅子
 * [#59 No Ticket, No Wonderful Life!](./episodes/060.md)
