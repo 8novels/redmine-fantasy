@@ -6,6 +6,7 @@ Redmineで始める異世界人心掌握術
 ![異世界ファンタジー](https://img.shields.io/badge/%E3%82%B8%E3%83%A3%E3%83%B3%E3%83%AB-%E7%95%B0%E4%B8%96%E7%95%8C%E3%83%95%E3%82%A1%E3%83%B3%E3%82%BF%E3%82%B8%E3%83%BC-brightgreen.svg)
 ![長編小説](https://img.shields.io/badge/%E5%BD%A2%E5%BC%8F-%E9%95%B7%E7%B7%A8%E5%B0%8F%E8%AA%AC-orange.svg)
 ![完結済](https://img.shields.io/badge/%E5%9F%B7%E7%AD%86%E7%8A%B6%E6%B3%81-%E5%AE%8C%E7%B5%90%E6%B8%88-red.svg)
+
 ## Description
 
 藤倉紅子、26歳。職業、SE。  
