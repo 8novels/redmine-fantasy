@@ -88,7 +88,7 @@ No Ticket, No Work! な異世界ファンタジー、ここにロールアウト
 * [#47 プラグインを活用します](./episodes/048.md)
 * [#48 電子メールを活用します](./episodes/049.md)
 * [#49 外部システムと連携します](./episodes/050.md)
-* [#50 管理画面を確認します](./episodes/051.md)
+* [#50 前夜](./episodes/051.md)
 
 ### 6章 No Ticket, No Wonderful Life!
 
@@ -99,7 +99,7 @@ No Ticket, No Work! な異世界ファンタジー、ここにロールアウト
 * [#55 進捗率:40％、担当者:ジェミィ](./episodes/056.md)
 * [#56 進捗率:60％、担当者:ライカ](./episodes/057.md)
 * [#57 進捗率:80％、担当者:レヴィ](./episodes/058.md)
-* #58 担当者:紅子
+* [#58 担当者:紅子](./episodes/059.md)
 * [#59 No Ticket, No Wonderful Life!](./episodes/060.md)
 * [#60 継続不可能《Rejected》](./episodes/061.md)
 
