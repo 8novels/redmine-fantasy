@@ -10,7 +10,10 @@ Redmineで始める異世界人心掌握術
 ## Usage
 
 これはGitHub上で執筆しているWeb小説です。  
-[https://8novels.github.io/redmine-fantasy/](https://8novels.github.io/redmine-fantasy/)にアクセスすると読みやすく表示されます。
+[GitHub Pages](https://8novels.github.io/redmine-fantasy/)の他、下記の小説投稿サイトでも公開しています。
+
+* [ノベラボ](https://www.novelabo.com/books/5101/chapters)
+* [小説家になろう](https://ncode.syosetu.com/n4056eu/)
 
 ## Description
 
