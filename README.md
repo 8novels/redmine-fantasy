@@ -28,8 +28,6 @@ No Ticket, No Work! な異世界ファンタジー、ここにロールアウト
 
 ----
 
-## [イラスト](https://github.com/8novels/redmine-fantasy/wiki/Illusts)
-
 ## 目次
 
 ### プロローグ  
