@@ -17,7 +17,7 @@ Redmineで始める異世界人心掌握術
 
 ## icense
 
-CC0とします。
+CC0とします。  
 https://creativecommons.org/publicdomain/zero/1.0/
 
 ## Description
