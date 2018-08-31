@@ -15,6 +15,11 @@ Redmineで始める異世界人心掌握術
 * [ノベラボ](https://www.novelabo.com/books/5101/chapters)
 * [小説家になろう](https://ncode.syosetu.com/n4056eu/)
 
+## icense
+
+CC0とします。
+https://creativecommons.org/publicdomain/zero/1.0/
+
 ## Description
 
 藤倉紅子、26歳。職業、SE。  
