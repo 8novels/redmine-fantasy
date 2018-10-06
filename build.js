@@ -12,9 +12,9 @@ new Publisher().initDistDir()
 })
 .then(function (contents) {
     return Promise.all([
-//        new Narou(contents).publish(),
-//        new Novelabo(contents).publish(),
-//        new Note(contents).publish(),
+        new Narou(contents).publish(),
+        new Novelabo(contents).publish(),
+        new Note(contents).publish(),
         new Epub(contents).publish()
     ])
 })
