@@ -1,0 +1,26 @@
+{
+  "name": "redmine-fantasy",
+  "version": "1.0.0",
+  "description": "Redmineで始める異世界人心掌握術",
+  "main": "index.js",
+  "scripts": {
+    "build": "node build.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/8novels/redmine-fantasy.git"
+  },
+  "author": "8amjp",
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/8novels/redmine-fantasy/issues"
+  },
+  "homepage": "https://github.com/8novels/redmine-fantasy#readme",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "epub-gen": "0.0.20",
+    "fs-extra": "^7.0.0",
+    "markdown-it": "^8.4.2"
+  }
+}
