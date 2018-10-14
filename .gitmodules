@@ -1,9 +1,0 @@
-[submodule "assets"]
-	path = assets
-	url = https://github.com/8amjp/theme-assets.git
-[submodule "_includes"]
-	path = _includes
-	url = https://github.com/8amjp/theme-includes.git
-[submodule "_layouts"]
-	path = _layouts
-	url = https://github.com/8amjp/theme-layouts.git

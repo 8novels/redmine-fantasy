@@ -12,7 +12,10 @@
   },
   "scripts": {
     "novel-build": "novel-build",
-    "epub-build": "epub-build"
+    "novel-build-epub": "novel-build-epub",
+    "novel-build-narou": "novel-build-narou",
+    "novel-build-note": "novel-build-note",
+    "novel-build-novelabo": "novel-build-novelabo"
   },
   "repository": {
     "type": "git",
@@ -25,6 +28,6 @@
   },
   "homepage": "https://github.com/8novels/redmine-fantasy#readme",
   "dependencies": {
-    "novel-builder": "latest"
+    "novel-builder": "^0.1.1"
   }
 }
