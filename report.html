@@ -1,0 +1,2163 @@
+<!doctype html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Novel Report</title>
+</head>
+<body>
+    <div class="container">
+        <h1 class="py-3">Novel Report</h1>
+        <p class="lead">redmine-fantasy</p>
+
+        <div class="alert alert-warning" role="alert">
+           計算値は概算です。各種小説投稿サイトの仕様により、文字数等の計算値は変化します。
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <div class="card mb-3">
+                    <div class="card-header p-2">
+                        Web小説として文字数を計算する
+                    </div>
+                    <div class="card-body p-2">
+                        <table class="table table-sm">
+                            <thead>
+                                <tr>
+                                    <th>条件</th>
+                                    <th>文字数</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>文字数1 <small>(半角スペース・改行を除いた文字数)</small></td>
+                                    <td class="text-right"><span class="font-weight-bold">114,047</span> 字</td>
+                                </tr>
+                                <tr>
+                                    <td>文字数2 <small>(さらに全角スペースを除いた文字数)</small></td>
+                                    <td class="text-right"><span class="font-weight-bold">107,141</span> 字</td>
+                                </tr>
+                                <tr>
+                                    <td>文字数3 <small>(さらにルビ文字を除いた文字数)</small></td>
+                                    <td class="text-right"><span class="font-weight-bold">104,527</span> 字</td>
+                                </tr>
+                                <tr>
+                                    <td>文字数4 <small>(さらに章タイトルを除いた文字数)</small></td>
+                                    <td class="text-right"><span class="font-weight-bold">103,628</span> 字</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="card mb-3">
+                    <div class="card-header p-2">
+                        章別レポート (Web小説)
+                    </div>
+                    <div class="card-body p-2">
+                        <table class="table table-sm">
+                            <thead>
+                                <tr>
+                                    <th>ファイル名</th>
+                                    <th>文字数1</th>
+                                    <th>文字数2</th>
+                                    <th>文字数3</th>
+                                    <th>文字数4</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>001.md</td>
+                                    <td class="text-right">3,516 字</td>
+                                    <td class="text-right">3,281 字</td>
+                                    <td class="text-right">3,102 字</td>
+                                    <td class="text-right">3,095 字</td>
+                                </tr>
+                                <tr>
+                                    <td>002.md</td>
+                                    <td class="text-right">1,403 字</td>
+                                    <td class="text-right">1,330 字</td>
+                                    <td class="text-right">1,320 字</td>
+                                    <td class="text-right">1,306 字</td>
+                                </tr>
+                                <tr>
+                                    <td>003.md</td>
+                                    <td class="text-right">2,030 字</td>
+                                    <td class="text-right">1,960 字</td>
+                                    <td class="text-right">1,930 字</td>
+                                    <td class="text-right">1,916 字</td>
+                                </tr>
+                                <tr>
+                                    <td>004.md</td>
+                                    <td class="text-right">1,496 字</td>
+                                    <td class="text-right">1,347 字</td>
+                                    <td class="text-right">1,334 字</td>
+                                    <td class="text-right">1,319 字</td>
+                                </tr>
+                                <tr>
+                                    <td>005.md</td>
+                                    <td class="text-right">1,349 字</td>
+                                    <td class="text-right">1,253 字</td>
+                                    <td class="text-right">1,244 字</td>
+                                    <td class="text-right">1,229 字</td>
+                                </tr>
+                                <tr>
+                                    <td>006.md</td>
+                                    <td class="text-right">1,771 字</td>
+                                    <td class="text-right">1,618 字</td>
+                                    <td class="text-right">1,606 字</td>
+                                    <td class="text-right">1,591 字</td>
+                                </tr>
+                                <tr>
+                                    <td>007.md</td>
+                                    <td class="text-right">1,791 字</td>
+                                    <td class="text-right">1,687 字</td>
+                                    <td class="text-right">1,665 字</td>
+                                    <td class="text-right">1,650 字</td>
+                                </tr>
+                                <tr>
+                                    <td>008.md</td>
+                                    <td class="text-right">1,873 字</td>
+                                    <td class="text-right">1,737 字</td>
+                                    <td class="text-right">1,731 字</td>
+                                    <td class="text-right">1,717 字</td>
+                                </tr>
+                                <tr>
+                                    <td>009.md</td>
+                                    <td class="text-right">1,822 字</td>
+                                    <td class="text-right">1,705 字</td>
+                                    <td class="text-right">1,689 字</td>
+                                    <td class="text-right">1,675 字</td>
+                                </tr>
+                                <tr>
+                                    <td>010.md</td>
+                                    <td class="text-right">1,662 字</td>
+                                    <td class="text-right">1,555 字</td>
+                                    <td class="text-right">1,516 字</td>
+                                    <td class="text-right">1,499 字</td>
+                                </tr>
+                                <tr>
+                                    <td>011.md</td>
+                                    <td class="text-right">1,274 字</td>
+                                    <td class="text-right">1,183 字</td>
+                                    <td class="text-right">1,155 字</td>
+                                    <td class="text-right">1,137 字</td>
+                                </tr>
+                                <tr>
+                                    <td>012.md</td>
+                                    <td class="text-right">2,183 字</td>
+                                    <td class="text-right">2,094 字</td>
+                                    <td class="text-right">2,025 字</td>
+                                    <td class="text-right">2,007 字</td>
+                                </tr>
+                                <tr>
+                                    <td>013.md</td>
+                                    <td class="text-right">1,704 字</td>
+                                    <td class="text-right">1,591 字</td>
+                                    <td class="text-right">1,571 字</td>
+                                    <td class="text-right">1,555 字</td>
+                                </tr>
+                                <tr>
+                                    <td>014.md</td>
+                                    <td class="text-right">2,246 字</td>
+                                    <td class="text-right">2,107 字</td>
+                                    <td class="text-right">2,091 字</td>
+                                    <td class="text-right">2,077 字</td>
+                                </tr>
+                                <tr>
+                                    <td>015.md</td>
+                                    <td class="text-right">1,847 字</td>
+                                    <td class="text-right">1,723 字</td>
+                                    <td class="text-right">1,685 字</td>
+                                    <td class="text-right">1,671 字</td>
+                                </tr>
+                                <tr>
+                                    <td>016.md</td>
+                                    <td class="text-right">2,235 字</td>
+                                    <td class="text-right">2,118 字</td>
+                                    <td class="text-right">2,098 字</td>
+                                    <td class="text-right">2,083 字</td>
+                                </tr>
+                                <tr>
+                                    <td>017.md</td>
+                                    <td class="text-right">2,252 字</td>
+                                    <td class="text-right">2,124 字</td>
+                                    <td class="text-right">1,990 字</td>
+                                    <td class="text-right">1,975 字</td>
+                                </tr>
+                                <tr>
+                                    <td>018.md</td>
+                                    <td class="text-right">1,709 字</td>
+                                    <td class="text-right">1,635 字</td>
+                                    <td class="text-right">1,548 字</td>
+                                    <td class="text-right">1,532 字</td>
+                                </tr>
+                                <tr>
+                                    <td>019.md</td>
+                                    <td class="text-right">2,066 字</td>
+                                    <td class="text-right">1,951 字</td>
+                                    <td class="text-right">1,881 字</td>
+                                    <td class="text-right">1,868 字</td>
+                                </tr>
+                                <tr>
+                                    <td>020.md</td>
+                                    <td class="text-right">1,474 字</td>
+                                    <td class="text-right">1,393 字</td>
+                                    <td class="text-right">1,354 字</td>
+                                    <td class="text-right">1,338 字</td>
+                                </tr>
+                                <tr>
+                                    <td>021.md</td>
+                                    <td class="text-right">1,671 字</td>
+                                    <td class="text-right">1,543 字</td>
+                                    <td class="text-right">1,518 字</td>
+                                    <td class="text-right">1,501 字</td>
+                                </tr>
+                                <tr>
+                                    <td>022.md</td>
+                                    <td class="text-right">2,158 字</td>
+                                    <td class="text-right">2,019 字</td>
+                                    <td class="text-right">1,951 字</td>
+                                    <td class="text-right">1,942 字</td>
+                                </tr>
+                                <tr>
+                                    <td>023.md</td>
+                                    <td class="text-right">1,884 字</td>
+                                    <td class="text-right">1,788 字</td>
+                                    <td class="text-right">1,698 字</td>
+                                    <td class="text-right">1,685 字</td>
+                                </tr>
+                                <tr>
+                                    <td>024.md</td>
+                                    <td class="text-right">1,781 字</td>
+                                    <td class="text-right">1,680 字</td>
+                                    <td class="text-right">1,641 字</td>
+                                    <td class="text-right">1,630 字</td>
+                                </tr>
+                                <tr>
+                                    <td>025.md</td>
+                                    <td class="text-right">1,766 字</td>
+                                    <td class="text-right">1,671 字</td>
+                                    <td class="text-right">1,644 字</td>
+                                    <td class="text-right">1,631 字</td>
+                                </tr>
+                                <tr>
+                                    <td>026.md</td>
+                                    <td class="text-right">1,615 字</td>
+                                    <td class="text-right">1,493 字</td>
+                                    <td class="text-right">1,445 字</td>
+                                    <td class="text-right">1,433 字</td>
+                                </tr>
+                                <tr>
+                                    <td>027.md</td>
+                                    <td class="text-right">1,760 字</td>
+                                    <td class="text-right">1,650 字</td>
+                                    <td class="text-right">1,591 字</td>
+                                    <td class="text-right">1,579 字</td>
+                                </tr>
+                                <tr>
+                                    <td>028.md</td>
+                                    <td class="text-right">1,823 字</td>
+                                    <td class="text-right">1,711 字</td>
+                                    <td class="text-right">1,659 字</td>
+                                    <td class="text-right">1,648 字</td>
+                                </tr>
+                                <tr>
+                                    <td>029.md</td>
+                                    <td class="text-right">2,212 字</td>
+                                    <td class="text-right">2,111 字</td>
+                                    <td class="text-right">2,044 字</td>
+                                    <td class="text-right">2,034 字</td>
+                                </tr>
+                                <tr>
+                                    <td>030.md</td>
+                                    <td class="text-right">2,246 字</td>
+                                    <td class="text-right">2,104 字</td>
+                                    <td class="text-right">2,035 字</td>
+                                    <td class="text-right">2,024 字</td>
+                                </tr>
+                                <tr>
+                                    <td>031.md</td>
+                                    <td class="text-right">2,890 字</td>
+                                    <td class="text-right">2,720 字</td>
+                                    <td class="text-right">2,655 字</td>
+                                    <td class="text-right">2,646 字</td>
+                                </tr>
+                                <tr>
+                                    <td>032.md</td>
+                                    <td class="text-right">1,845 字</td>
+                                    <td class="text-right">1,793 字</td>
+                                    <td class="text-right">1,735 字</td>
+                                    <td class="text-right">1,727 字</td>
+                                </tr>
+                                <tr>
+                                    <td>033.md</td>
+                                    <td class="text-right">2,265 字</td>
+                                    <td class="text-right">2,183 字</td>
+                                    <td class="text-right">2,124 字</td>
+                                    <td class="text-right">2,113 字</td>
+                                </tr>
+                                <tr>
+                                    <td>034.md</td>
+                                    <td class="text-right">1,516 字</td>
+                                    <td class="text-right">1,463 字</td>
+                                    <td class="text-right">1,437 字</td>
+                                    <td class="text-right">1,420 字</td>
+                                </tr>
+                                <tr>
+                                    <td>035.md</td>
+                                    <td class="text-right">1,616 字</td>
+                                    <td class="text-right">1,530 字</td>
+                                    <td class="text-right">1,513 字</td>
+                                    <td class="text-right">1,498 字</td>
+                                </tr>
+                                <tr>
+                                    <td>036.md</td>
+                                    <td class="text-right">1,609 字</td>
+                                    <td class="text-right">1,517 字</td>
+                                    <td class="text-right">1,466 字</td>
+                                    <td class="text-right">1,451 字</td>
+                                </tr>
+                                <tr>
+                                    <td>037.md</td>
+                                    <td class="text-right">2,014 字</td>
+                                    <td class="text-right">1,911 字</td>
+                                    <td class="text-right">1,899 字</td>
+                                    <td class="text-right">1,882 字</td>
+                                </tr>
+                                <tr>
+                                    <td>038.md</td>
+                                    <td class="text-right">1,871 字</td>
+                                    <td class="text-right">1,813 字</td>
+                                    <td class="text-right">1,794 字</td>
+                                    <td class="text-right">1,777 字</td>
+                                </tr>
+                                <tr>
+                                    <td>039.md</td>
+                                    <td class="text-right">1,645 字</td>
+                                    <td class="text-right">1,570 字</td>
+                                    <td class="text-right">1,500 字</td>
+                                    <td class="text-right">1,483 字</td>
+                                </tr>
+                                <tr>
+                                    <td>040.md</td>
+                                    <td class="text-right">1,464 字</td>
+                                    <td class="text-right">1,391 字</td>
+                                    <td class="text-right">1,358 字</td>
+                                    <td class="text-right">1,346 字</td>
+                                </tr>
+                                <tr>
+                                    <td>041.md</td>
+                                    <td class="text-right">3,743 字</td>
+                                    <td class="text-right">3,505 字</td>
+                                    <td class="text-right">3,391 字</td>
+                                    <td class="text-right">3,384 字</td>
+                                </tr>
+                                <tr>
+                                    <td>042.md</td>
+                                    <td class="text-right">1,776 字</td>
+                                    <td class="text-right">1,677 字</td>
+                                    <td class="text-right">1,677 字</td>
+                                    <td class="text-right">1,663 字</td>
+                                </tr>
+                                <tr>
+                                    <td>043.md</td>
+                                    <td class="text-right">1,269 字</td>
+                                    <td class="text-right">1,224 字</td>
+                                    <td class="text-right">1,224 字</td>
+                                    <td class="text-right">1,210 字</td>
+                                </tr>
+                                <tr>
+                                    <td>044.md</td>
+                                    <td class="text-right">1,595 字</td>
+                                    <td class="text-right">1,506 字</td>
+                                    <td class="text-right">1,480 字</td>
+                                    <td class="text-right">1,466 字</td>
+                                </tr>
+                                <tr>
+                                    <td>045.md</td>
+                                    <td class="text-right">1,640 字</td>
+                                    <td class="text-right">1,542 字</td>
+                                    <td class="text-right">1,534 字</td>
+                                    <td class="text-right">1,519 字</td>
+                                </tr>
+                                <tr>
+                                    <td>046.md</td>
+                                    <td class="text-right">1,166 字</td>
+                                    <td class="text-right">1,098 字</td>
+                                    <td class="text-right">1,098 字</td>
+                                    <td class="text-right">1,082 字</td>
+                                </tr>
+                                <tr>
+                                    <td>047.md</td>
+                                    <td class="text-right">1,818 字</td>
+                                    <td class="text-right">1,685 字</td>
+                                    <td class="text-right">1,667 字</td>
+                                    <td class="text-right">1,654 字</td>
+                                </tr>
+                                <tr>
+                                    <td>048.md</td>
+                                    <td class="text-right">1,145 字</td>
+                                    <td class="text-right">1,085 字</td>
+                                    <td class="text-right">1,064 字</td>
+                                    <td class="text-right">1,049 字</td>
+                                </tr>
+                                <tr>
+                                    <td>049.md</td>
+                                    <td class="text-right">1,238 字</td>
+                                    <td class="text-right">1,179 字</td>
+                                    <td class="text-right">1,179 字</td>
+                                    <td class="text-right">1,164 字</td>
+                                </tr>
+                                <tr>
+                                    <td>050.md</td>
+                                    <td class="text-right">1,190 字</td>
+                                    <td class="text-right">1,133 字</td>
+                                    <td class="text-right">1,133 字</td>
+                                    <td class="text-right">1,117 字</td>
+                                </tr>
+                                <tr>
+                                    <td>051.md</td>
+                                    <td class="text-right">1,009 字</td>
+                                    <td class="text-right">949 字</td>
+                                    <td class="text-right">942 字</td>
+                                    <td class="text-right">936 字</td>
+                                </tr>
+                                <tr>
+                                    <td>052.md</td>
+                                    <td class="text-right">1,509 字</td>
+                                    <td class="text-right">1,405 字</td>
+                                    <td class="text-right">1,377 字</td>
+                                    <td class="text-right">1,367 字</td>
+                                </tr>
+                                <tr>
+                                    <td>053.md</td>
+                                    <td class="text-right">1,996 字</td>
+                                    <td class="text-right">1,869 字</td>
+                                    <td class="text-right">1,760 字</td>
+                                    <td class="text-right">1,745 字</td>
+                                </tr>
+                                <tr>
+                                    <td>054.md</td>
+                                    <td class="text-right">1,007 字</td>
+                                    <td class="text-right">915 字</td>
+                                    <td class="text-right">850 字</td>
+                                    <td class="text-right">843 字</td>
+                                </tr>
+                                <tr>
+                                    <td>055.md</td>
+                                    <td class="text-right">2,109 字</td>
+                                    <td class="text-right">1,977 字</td>
+                                    <td class="text-right">1,864 字</td>
+                                    <td class="text-right">1,845 字</td>
+                                </tr>
+                                <tr>
+                                    <td>056.md</td>
+                                    <td class="text-right">1,699 字</td>
+                                    <td class="text-right">1,571 字</td>
+                                    <td class="text-right">1,527 字</td>
+                                    <td class="text-right">1,507 字</td>
+                                </tr>
+                                <tr>
+                                    <td>057.md</td>
+                                    <td class="text-right">1,501 字</td>
+                                    <td class="text-right">1,381 字</td>
+                                    <td class="text-right">1,355 字</td>
+                                    <td class="text-right">1,336 字</td>
+                                </tr>
+                                <tr>
+                                    <td>058.md</td>
+                                    <td class="text-right">1,579 字</td>
+                                    <td class="text-right">1,441 字</td>
+                                    <td class="text-right">1,389 字</td>
+                                    <td class="text-right">1,370 字</td>
+                                </tr>
+                                <tr>
+                                    <td>059.md</td>
+                                    <td class="text-right">1,856 字</td>
+                                    <td class="text-right">1,701 字</td>
+                                    <td class="text-right">1,639 字</td>
+                                    <td class="text-right">1,629 字</td>
+                                </tr>
+                                <tr>
+                                    <td>060.md</td>
+                                    <td class="text-right">1,203 字</td>
+                                    <td class="text-right">1,128 字</td>
+                                    <td class="text-right">1,108 字</td>
+                                    <td class="text-right">1,079 字</td>
+                                </tr>
+                                <tr>
+                                    <td>061.md</td>
+                                    <td class="text-right">1,203 字</td>
+                                    <td class="text-right">1,084 字</td>
+                                    <td class="text-right">1,064 字</td>
+                                    <td class="text-right">1,055 字</td>
+                                </tr>
+                                <tr>
+                                    <td>062.md</td>
+                                    <td class="text-right">2,421 字</td>
+                                    <td class="text-right">2,298 字</td>
+                                    <td class="text-right">2,248 字</td>
+                                    <td class="text-right">2,233 字</td>
+                                </tr>
+                                <tr>
+                                    <td>063.md</td>
+                                    <td class="text-right">1,467 字</td>
+                                    <td class="text-right">1,325 字</td>
+                                    <td class="text-right">1,316 字</td>
+                                    <td class="text-right">1,301 字</td>
+                                </tr>
+                                <tr>
+                                    <td>064.md</td>
+                                    <td class="text-right">1,554 字</td>
+                                    <td class="text-right">1,410 字</td>
+                                    <td class="text-right">1,399 字</td>
+                                    <td class="text-right">1,384 字</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-6 col-sm-12">
+
+                <div class="card mb-3">
+                    <div class="card-header p-2">
+                        原稿用紙(20字×20行)として文字数を計算する
+                    </div>
+                    <div class="card-body p-2">
+                        <table class="table table-sm">
+                            <thead>
+                                <tr>
+                                    <th>条件</th>
+                                    <th>行数</th>
+                                    <th>枚数</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>章の間を1行空ける</td>
+                                    <td class="text-right">
+                                        <span class="font-weight-bold">7,843</span> 行
+                                    </td>
+                                    <td class="text-right">
+                                        <span class="font-weight-bold">392</span> 枚 + 
+                                        <span class="font-weight-bold">3</span> 行
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>章の間を1行空けない</td>
+                                    <td class="text-right">
+                                        <span class="font-weight-bold">7,780</span> 行
+                                    </td>
+                                    <td class="text-right">
+                                        <span class="font-weight-bold">389</span> 枚 + 
+                                        <span class="font-weight-bold">0</span> 行
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="card mb-3">
+                    <div class="card-header p-2">
+                        章別レポート (原稿用紙)
+                    </div>
+                    <div class="card-body p-2">
+                        <table class="table table-sm">
+                            <thead>
+                                <tr>
+                                    <th>ファイル名</th>
+                                    <th>行数</th>
+                                    <th>枚数</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>001.md</td>
+                                    <td class="text-right">229 行</td>
+                                    <td class="text-right">11 枚 + 9 行</td>
+                                </tr>
+                                <tr>
+                                    <td>002.md</td>
+                                    <td class="text-right">94 行</td>
+                                    <td class="text-right">4 枚 + 14 行</td>
+                                </tr>
+                                <tr>
+                                    <td>003.md</td>
+                                    <td class="text-right">122 行</td>
+                                    <td class="text-right">6 枚 + 2 行</td>
+                                </tr>
+                                <tr>
+                                    <td>004.md</td>
+                                    <td class="text-right">108 行</td>
+                                    <td class="text-right">5 枚 + 8 行</td>
+                                </tr>
+                                <tr>
+                                    <td>005.md</td>
+                                    <td class="text-right">95 行</td>
+                                    <td class="text-right">4 枚 + 15 行</td>
+                                </tr>
+                                <tr>
+                                    <td>006.md</td>
+                                    <td class="text-right">129 行</td>
+                                    <td class="text-right">6 枚 + 9 行</td>
+                                </tr>
+                                <tr>
+                                    <td>007.md</td>
+                                    <td class="text-right">129 行</td>
+                                    <td class="text-right">6 枚 + 9 行</td>
+                                </tr>
+                                <tr>
+                                    <td>008.md</td>
+                                    <td class="text-right">132 行</td>
+                                    <td class="text-right">6 枚 + 12 行</td>
+                                </tr>
+                                <tr>
+                                    <td>009.md</td>
+                                    <td class="text-right">113 行</td>
+                                    <td class="text-right">5 枚 + 13 行</td>
+                                </tr>
+                                <tr>
+                                    <td>010.md</td>
+                                    <td class="text-right">107 行</td>
+                                    <td class="text-right">5 枚 + 7 行</td>
+                                </tr>
+                                <tr>
+                                    <td>011.md</td>
+                                    <td class="text-right">97 行</td>
+                                    <td class="text-right">4 枚 + 17 行</td>
+                                </tr>
+                                <tr>
+                                    <td>012.md</td>
+                                    <td class="text-right">132 行</td>
+                                    <td class="text-right">6 枚 + 12 行</td>
+                                </tr>
+                                <tr>
+                                    <td>013.md</td>
+                                    <td class="text-right">120 行</td>
+                                    <td class="text-right">6 枚 + 0 行</td>
+                                </tr>
+                                <tr>
+                                    <td>014.md</td>
+                                    <td class="text-right">158 行</td>
+                                    <td class="text-right">7 枚 + 18 行</td>
+                                </tr>
+                                <tr>
+                                    <td>015.md</td>
+                                    <td class="text-right">123 行</td>
+                                    <td class="text-right">6 枚 + 3 行</td>
+                                </tr>
+                                <tr>
+                                    <td>016.md</td>
+                                    <td class="text-right">146 行</td>
+                                    <td class="text-right">7 枚 + 6 行</td>
+                                </tr>
+                                <tr>
+                                    <td>017.md</td>
+                                    <td class="text-right">148 行</td>
+                                    <td class="text-right">7 枚 + 8 行</td>
+                                </tr>
+                                <tr>
+                                    <td>018.md</td>
+                                    <td class="text-right">112 行</td>
+                                    <td class="text-right">5 枚 + 12 行</td>
+                                </tr>
+                                <tr>
+                                    <td>019.md</td>
+                                    <td class="text-right">141 行</td>
+                                    <td class="text-right">7 枚 + 1 行</td>
+                                </tr>
+                                <tr>
+                                    <td>020.md</td>
+                                    <td class="text-right">104 行</td>
+                                    <td class="text-right">5 枚 + 4 行</td>
+                                </tr>
+                                <tr>
+                                    <td>021.md</td>
+                                    <td class="text-right">120 行</td>
+                                    <td class="text-right">6 枚 + 0 行</td>
+                                </tr>
+                                <tr>
+                                    <td>022.md</td>
+                                    <td class="text-right">150 行</td>
+                                    <td class="text-right">7 枚 + 10 行</td>
+                                </tr>
+                                <tr>
+                                    <td>023.md</td>
+                                    <td class="text-right">122 行</td>
+                                    <td class="text-right">6 枚 + 2 行</td>
+                                </tr>
+                                <tr>
+                                    <td>024.md</td>
+                                    <td class="text-right">122 行</td>
+                                    <td class="text-right">6 枚 + 2 行</td>
+                                </tr>
+                                <tr>
+                                    <td>025.md</td>
+                                    <td class="text-right">123 行</td>
+                                    <td class="text-right">6 枚 + 3 行</td>
+                                </tr>
+                                <tr>
+                                    <td>026.md</td>
+                                    <td class="text-right">114 行</td>
+                                    <td class="text-right">5 枚 + 14 行</td>
+                                </tr>
+                                <tr>
+                                    <td>027.md</td>
+                                    <td class="text-right">130 行</td>
+                                    <td class="text-right">6 枚 + 10 行</td>
+                                </tr>
+                                <tr>
+                                    <td>028.md</td>
+                                    <td class="text-right">128 行</td>
+                                    <td class="text-right">6 枚 + 8 行</td>
+                                </tr>
+                                <tr>
+                                    <td>029.md</td>
+                                    <td class="text-right">145 行</td>
+                                    <td class="text-right">7 枚 + 5 行</td>
+                                </tr>
+                                <tr>
+                                    <td>030.md</td>
+                                    <td class="text-right">166 行</td>
+                                    <td class="text-right">8 枚 + 6 行</td>
+                                </tr>
+                                <tr>
+                                    <td>031.md</td>
+                                    <td class="text-right">201 行</td>
+                                    <td class="text-right">10 枚 + 1 行</td>
+                                </tr>
+                                <tr>
+                                    <td>032.md</td>
+                                    <td class="text-right">106 行</td>
+                                    <td class="text-right">5 枚 + 6 行</td>
+                                </tr>
+                                <tr>
+                                    <td>033.md</td>
+                                    <td class="text-right">145 行</td>
+                                    <td class="text-right">7 枚 + 5 行</td>
+                                </tr>
+                                <tr>
+                                    <td>034.md</td>
+                                    <td class="text-right">90 行</td>
+                                    <td class="text-right">4 枚 + 10 行</td>
+                                </tr>
+                                <tr>
+                                    <td>035.md</td>
+                                    <td class="text-right">113 行</td>
+                                    <td class="text-right">5 枚 + 13 行</td>
+                                </tr>
+                                <tr>
+                                    <td>036.md</td>
+                                    <td class="text-right">107 行</td>
+                                    <td class="text-right">5 枚 + 7 行</td>
+                                </tr>
+                                <tr>
+                                    <td>037.md</td>
+                                    <td class="text-right">138 行</td>
+                                    <td class="text-right">6 枚 + 18 行</td>
+                                </tr>
+                                <tr>
+                                    <td>038.md</td>
+                                    <td class="text-right">119 行</td>
+                                    <td class="text-right">5 枚 + 19 行</td>
+                                </tr>
+                                <tr>
+                                    <td>039.md</td>
+                                    <td class="text-right">108 行</td>
+                                    <td class="text-right">5 枚 + 8 行</td>
+                                </tr>
+                                <tr>
+                                    <td>040.md</td>
+                                    <td class="text-right">95 行</td>
+                                    <td class="text-right">4 枚 + 15 行</td>
+                                </tr>
+                                <tr>
+                                    <td>041.md</td>
+                                    <td class="text-right">251 行</td>
+                                    <td class="text-right">12 枚 + 11 行</td>
+                                </tr>
+                                <tr>
+                                    <td>042.md</td>
+                                    <td class="text-right">119 行</td>
+                                    <td class="text-right">5 枚 + 19 行</td>
+                                </tr>
+                                <tr>
+                                    <td>043.md</td>
+                                    <td class="text-right">86 行</td>
+                                    <td class="text-right">4 枚 + 6 行</td>
+                                </tr>
+                                <tr>
+                                    <td>044.md</td>
+                                    <td class="text-right">106 行</td>
+                                    <td class="text-right">5 枚 + 6 行</td>
+                                </tr>
+                                <tr>
+                                    <td>045.md</td>
+                                    <td class="text-right">106 行</td>
+                                    <td class="text-right">5 枚 + 6 行</td>
+                                </tr>
+                                <tr>
+                                    <td>046.md</td>
+                                    <td class="text-right">80 行</td>
+                                    <td class="text-right">4 枚 + 0 行</td>
+                                </tr>
+                                <tr>
+                                    <td>047.md</td>
+                                    <td class="text-right">127 行</td>
+                                    <td class="text-right">6 枚 + 7 行</td>
+                                </tr>
+                                <tr>
+                                    <td>048.md</td>
+                                    <td class="text-right">80 行</td>
+                                    <td class="text-right">4 枚 + 0 行</td>
+                                </tr>
+                                <tr>
+                                    <td>049.md</td>
+                                    <td class="text-right">83 行</td>
+                                    <td class="text-right">4 枚 + 3 行</td>
+                                </tr>
+                                <tr>
+                                    <td>050.md</td>
+                                    <td class="text-right">77 行</td>
+                                    <td class="text-right">3 枚 + 17 行</td>
+                                </tr>
+                                <tr>
+                                    <td>051.md</td>
+                                    <td class="text-right">69 行</td>
+                                    <td class="text-right">3 枚 + 9 行</td>
+                                </tr>
+                                <tr>
+                                    <td>052.md</td>
+                                    <td class="text-right">115 行</td>
+                                    <td class="text-right">5 枚 + 15 行</td>
+                                </tr>
+                                <tr>
+                                    <td>053.md</td>
+                                    <td class="text-right">143 行</td>
+                                    <td class="text-right">7 枚 + 3 行</td>
+                                </tr>
+                                <tr>
+                                    <td>054.md</td>
+                                    <td class="text-right">83 行</td>
+                                    <td class="text-right">4 枚 + 3 行</td>
+                                </tr>
+                                <tr>
+                                    <td>055.md</td>
+                                    <td class="text-right">133 行</td>
+                                    <td class="text-right">6 枚 + 13 行</td>
+                                </tr>
+                                <tr>
+                                    <td>056.md</td>
+                                    <td class="text-right">125 行</td>
+                                    <td class="text-right">6 枚 + 5 行</td>
+                                </tr>
+                                <tr>
+                                    <td>057.md</td>
+                                    <td class="text-right">102 行</td>
+                                    <td class="text-right">5 枚 + 2 行</td>
+                                </tr>
+                                <tr>
+                                    <td>058.md</td>
+                                    <td class="text-right">110 行</td>
+                                    <td class="text-right">5 枚 + 10 行</td>
+                                </tr>
+                                <tr>
+                                    <td>059.md</td>
+                                    <td class="text-right">139 行</td>
+                                    <td class="text-right">6 枚 + 19 行</td>
+                                </tr>
+                                <tr>
+                                    <td>060.md</td>
+                                    <td class="text-right">86 行</td>
+                                    <td class="text-right">4 枚 + 6 行</td>
+                                </tr>
+                                <tr>
+                                    <td>061.md</td>
+                                    <td class="text-right">92 行</td>
+                                    <td class="text-right">4 枚 + 12 行</td>
+                                </tr>
+                                <tr>
+                                    <td>062.md</td>
+                                    <td class="text-right">168 行</td>
+                                    <td class="text-right">8 枚 + 8 行</td>
+                                </tr>
+                                <tr>
+                                    <td>063.md</td>
+                                    <td class="text-right">107 行</td>
+                                    <td class="text-right">5 枚 + 7 行</td>
+                                </tr>
+                                <tr>
+                                    <td>064.md</td>
+                                    <td class="text-right">112 行</td>
+                                    <td class="text-right">5 枚 + 12 行</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+
+                <div class="card mb-3">
+                    <div class="card-header p-2">
+                        行内訳
+                    </div>
+                    <div class="card-body p-2">
+                        <table class="table table-sm">
+                            <thead>
+                                <tr>
+                                    <th>条件</th>
+                                    <th>行数</th>
+                                    <th>割合</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>全行数</td>
+                                    <td class="text-right">
+                                        <span class="font-weight-bold">3,592</span> 行
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>台詞 <small>(鉤括弧で始まる行)</small></td>
+                                    <td class="text-right">
+                                        <span class="font-weight-bold">917</span> 行
+                                    </td>
+                                    <td class="text-right">
+                                        <small>(25.5%)</small>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>地の文 <small>(全角スペースで始まる行)</small></td>
+                                    <td class="text-right">
+                                        <span class="font-weight-bold">1,264</span> 行
+                                    </td>
+                                    <td class="text-right">
+                                        <small>(35.1%)</small>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>その他の文字で始まる行 <small>(章タイトル等)</small></td>
+                                    <td class="text-right">
+                                        <span class="font-weight-bold">64</span> 行
+                                    </td>
+                                    <td class="text-right">
+                                        <small>(1.7%)</small>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>空行</td>
+                                    <td class="text-right">
+                                        <span class="font-weight-bold">1,347</span> 行
+                                    </td>
+                                    <td class="text-right">
+                                        <small>(37.5%)</small>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="card mb-3">
+                    <div class="card-header p-2">
+                        章別レポート (行内訳)
+                    </div>
+                    <div class="card-body p-2">
+                        <table class="table table-sm">
+                            <thead>
+                                <tr>
+                                    <th>ファイル名</th>
+                                    <th>行数</th>
+                                    <th>台詞</th>
+                                    <th>地の文</th>
+                                    <th>その他</th>
+                                    <th>空行</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>001.md</td>
+                                    <td class="text-right">107 行</td>
+                                    <td class="text-right">20 行<br><small>(18.6%)</small></td>
+                                    <td class="text-right">49 行<br><small>(45.7%)</small></td>
+                                    <td class="text-right">1 行<br><small>(0.9%)</small></td>
+                                    <td class="text-right">37 行<br><small>(34.5%)</small></td>
+                                </tr>
+                                <tr>
+                                    <td>002.md</td>
+                                    <td class="text-right">37 行</td>
+                                    <td class="text-right">0 行<br><small>(0%)</small></td>
+                                    <td class="text-right">21 行<br><small>(56.7%)</small></td>
+                                    <td class="text-right">1 行<br><small>(2.7%)</small></td>
+                                    <td class="text-right">15 行<br><small>(40.5%)</small></td>
+                                </tr>
+                                <tr>
+                                    <td>003.md</td>
+                                    <td class="text-right">35 行</td>
+                                    <td class="text-right">1 行<br><small>(2.8%)</small></td>
+                                    <td class="text-right">18 行<br><small>(51.4%)</small></td>
+                                    <td class="text-right">1 行<br><small>(2.8%)</small></td>
+                                    <td class="text-right">15 行<br><small>(42.8%)</small></td>
+                                </tr>
+                                <tr>
+                                    <td>004.md</td>
+                                    <td class="text-right">60 行</td>
+                                    <td class="text-right">4 行<br><small>(6.6%)</small></td>
+                                    <td class="text-right">37 行<br><small>(61.6%)</small></td>
+                                    <td class="text-right">1 行<br><small>(1.6%)</small></td>
+                                    <td class="text-right">18 行<br><small>(30%)</small></td>
+                                </tr>
+                                <tr>
+                                    <td>005.md</td>
+                                    <td class="text-right">49 行</td>
+                                    <td class="text-right">15 行<br><small>(30.6%)</small></td>
+                                    <td class="text-right">15 行<br><small>(30.6%)</small></td>
+                                    <td class="text-right">1 行<br><small>(2%)</small></td>
+                                    <td class="text-right">18 行<br><small>(36.7%)</small></td>
+                                </tr>
+                                <tr>
+                                    <td>006.md</td>
+                                    <td class="text-right">72 行</td>
+                                    <td class="text-right">32 行<br><small>(44.4%)</small></td>
+                                    <td class="text-right">16 行<br><small>(22.2%)</small></td>
+                                    <td class="text-right">1 行<br><small>(1.3%)</small></td>
+                                    <td class="text-right">23 行<br><small>(31.9%)</small></td>
+                                </tr>
+                                <tr>
+                                    <td>007.md</td>
+                                    <td class="text-right">66 行</td>
+                                    <td class="text-right">21 行<br><small>(31.8%)</small></td>
+                                    <td class="text-right">16 行<br><small>(24.2%)</small></td>
+                                    <td class="text-right">1 行<br><small>(1.5%)</small></td>
+                                    <td class="text-right">28 行<br><small>(42.4%)</small></td>
+                                </tr>
+                                <tr>
+                                    <td>008.md</td>
+                                    <td class="text-right">65 行</td>
+                                    <td class="text-right">14 行<br><small>(21.5%)</small></td>
+                                    <td class="text-right">27 行<br><small>(41.5%)</small></td>
+                                    <td class="text-right">1 行<br><small>(1.5%)</small></td>
+                                    <td class="text-right">23 行<br><small>(35.3%)</small></td>
+                                </tr>
+                                <tr>
+                                    <td>009.md</td>
+                                    <td class="text-right">46 行</td>
+                                    <td class="text-right">5 行<br><small>(10.8%)</small></td>
+                                    <td class="text-right">26 行<br><small>(56.5%)</small></td>
+                                    <td class="text-right">1 行<br><small>(2.1%)</small></td>
+                                    <td class="text-right">14 行<br><small>(30.4%)</small></td>
+                                </tr>
+                                <tr>
+                                    <td>010.md</td>
+                                    <td class="text-right">45 行</td>
+                                    <td class="text-right">3 行<br><small>(6.6%)</small></td>
+                                    <td class="text-right">27 行<br><small>(60%)</small></td>
+                                    <td class="text-right">1 行<br><small>(2.2%)</small></td>
+                                    <td class="text-right">14 行<br><small>(31.1%)</small></td>
+                                </tr>
+                                <tr>
+                                    <td>011.md</td>
+                                    <td class="text-right">53 行</td>
+                                    <td class="text-right">13 行<br><small>(24.5%)</small></td>
+                                    <td class="text-right">17 行<br><small>(32%)</small></td>
+                                    <td class="text-right">1 行<br><small>(1.8%)</small></td>
+                                    <td class="text-right">22 行<br><small>(41.5%)</small></td>
+                                </tr>
+                                <tr>
+                                    <td>012.md</td>
+                                    <td class="text-right">40 行</td>
+                                    <td class="text-right">0 行<br><small>(0%)</small></td>
+                                    <td class="text-right">25 行<br><small>(62.5%)</small></td>
+                                    <td class="text-right">1 行<br><small>(2.5%)</small></td>
+                                    <td class="text-right">14 行<br><small>(35%)</small></td>
+                                </tr>
+                                <tr>
+                                    <td>013.md</td>
+                                    <td class="text-right">61 行</td>
+                                    <td class="text-right">24 行<br><small>(39.3%)</small></td>
+                                    <td class="text-right">14 行<br><small>(22.9%)</small></td>
+                                    <td class="text-right">1 行<br><small>(1.6%)</small></td>
+                                    <td class="text-right">22 行<br><small>(36%)</small></td>
+                                </tr>
+                                <tr>
+                                    <td>014.md</td>
+                                    <td class="text-right">74 行</td>
+                                    <td class="text-right">36 行<br><small>(48.6%)</small></td>
+                                    <td class="text-right">13 行<br><small>(17.5%)</small></td>
+                                    <td class="text-right">1 行<br><small>(1.3%)</small></td>
+                                    <td class="text-right">24 行<br><small>(32.4%)</small></td>
+                                </tr>
+                                <tr>
+                                    <td>015.md</td>
+                                    <td class="text-right">56 行</td>
+                                    <td class="text-right">27 行<br><small>(48.2%)</small></td>
+                                    <td class="text-right">13 行<br><small>(23.2%)</small></td>
+                                    <td class="text-right">1 行<br><small>(1.7%)</small></td>
+                                    <td class="text-right">15 行<br><small>(26.7%)</small></td>
+                                </tr>
+                                <tr>
+                                    <td>016.md</td>
+                                    <td class="text-right">61 行</td>
+                                    <td class="text-right">20 行<br><small>(32.7%)</small></td>
+                                    <td class="text-right">18 行<br><small>(29.5%)</small></td>
+                                    <td class="text-right">1 行<br><small>(1.6%)</small></td>
+                                    <td class="text-right">22 行<br><small>(36%)</small></td>
+                                </tr>
+                                <tr>
+                                    <td>017.md</td>
+                                    <td class="text-right">66 行</td>
+                                    <td class="text-right">15 行<br><small>(22.7%)</small></td>
+                                    <td class="text-right">24 行<br><small>(36.3%)</small></td>
+                                    <td class="text-right">1 行<br><small>(1.5%)</small></td>
+                                    <td class="text-right">26 行<br><small>(39.3%)</small></td>
+                                </tr>
+                                <tr>
+                                    <td>018.md</td>
+                                    <td class="text-right">46 行</td>
+                                    <td class="text-right">10 行<br><small>(21.7%)</small></td>
+                                    <td class="text-right">15 行<br><small>(32.6%)</small></td>
+                                    <td class="text-right">1 行<br><small>(2.1%)</small></td>
+                                    <td class="text-right">20 行<br><small>(43.4%)</small></td>
+                                </tr>
+                                <tr>
+                                    <td>019.md</td>
+                                    <td class="text-right">66 行</td>
+                                    <td class="text-right">17 行<br><small>(25.7%)</small></td>
+                                    <td class="text-right">20 行<br><small>(30.3%)</small></td>
+                                    <td class="text-right">1 行<br><small>(1.5%)</small></td>
+                                    <td class="text-right">28 行<br><small>(42.4%)</small></td>
+                                </tr>
+                                <tr>
+                                    <td>020.md</td>
+                                    <td class="text-right">48 行</td>
+                                    <td class="text-right">10 行<br><small>(20.8%)</small></td>
+                                    <td class="text-right">17 行<br><small>(35.4%)</small></td>
+                                    <td class="text-right">1 行<br><small>(2%)</small></td>
+                                    <td class="text-right">20 行<br><small>(41.6%)</small></td>
+                                </tr>
+                                <tr>
+                                    <td>021.md</td>
+                                    <td class="text-right">63 行</td>
+                                    <td class="text-right">26 行<br><small>(41.2%)</small></td>
+                                    <td class="text-right">13 行<br><small>(20.6%)</small></td>
+                                    <td class="text-right">1 行<br><small>(1.5%)</small></td>
+                                    <td class="text-right">23 行<br><small>(36.5%)</small></td>
+                                </tr>
+                                <tr>
+                                    <td>022.md</td>
+                                    <td class="text-right">76 行</td>
+                                    <td class="text-right">32 行<br><small>(42.1%)</small></td>
+                                    <td class="text-right">15 行<br><small>(19.7%)</small></td>
+                                    <td class="text-right">1 行<br><small>(1.3%)</small></td>
+                                    <td class="text-right">28 行<br><small>(36.8%)</small></td>
+                                </tr>
+                                <tr>
+                                    <td>023.md</td>
+                                    <td class="text-right">51 行</td>
+                                    <td class="text-right">13 行<br><small>(25.4%)</small></td>
+                                    <td class="text-right">18 行<br><small>(35.2%)</small></td>
+                                    <td class="text-right">1 行<br><small>(1.9%)</small></td>
+                                    <td class="text-right">19 行<br><small>(37.2%)</small></td>
+                                </tr>
+                                <tr>
+                                    <td>024.md</td>
+                                    <td class="text-right">55 行</td>
+                                    <td class="text-right">8 行<br><small>(14.5%)</small></td>
+                                    <td class="text-right">22 行<br><small>(40%)</small></td>
+                                    <td class="text-right">1 行<br><small>(1.8%)</small></td>
+                                    <td class="text-right">24 行<br><small>(43.6%)</small></td>
+                                </tr>
+                                <tr>
+                                    <td>025.md</td>
+                                    <td class="text-right">58 行</td>
+                                    <td class="text-right">15 行<br><small>(25.8%)</small></td>
+                                    <td class="text-right">18 行<br><small>(31%)</small></td>
+                                    <td class="text-right">1 行<br><small>(1.7%)</small></td>
+                                    <td class="text-right">24 行<br><small>(41.3%)</small></td>
+                                </tr>
+                                <tr>
+                                    <td>026.md</td>
+                                    <td class="text-right">59 行</td>
+                                    <td class="text-right">25 行<br><small>(42.3%)</small></td>
+                                    <td class="text-right">13 行<br><small>(22%)</small></td>
+                                    <td class="text-right">1 行<br><small>(1.6%)</small></td>
+                                    <td class="text-right">20 行<br><small>(33.8%)</small></td>
+                                </tr>
+                                <tr>
+                                    <td>027.md</td>
+                                    <td class="text-right">69 行</td>
+                                    <td class="text-right">25 行<br><small>(36.2%)</small></td>
+                                    <td class="text-right">15 行<br><small>(21.7%)</small></td>
+                                    <td class="text-right">1 行<br><small>(1.4%)</small></td>
+                                    <td class="text-right">28 行<br><small>(40.5%)</small></td>
+                                </tr>
+                                <tr>
+                                    <td>028.md</td>
+                                    <td class="text-right">63 行</td>
+                                    <td class="text-right">14 行<br><small>(22.2%)</small></td>
+                                    <td class="text-right">22 行<br><small>(34.9%)</small></td>
+                                    <td class="text-right">1 行<br><small>(1.5%)</small></td>
+                                    <td class="text-right">26 行<br><small>(41.2%)</small></td>
+                                </tr>
+                                <tr>
+                                    <td>029.md</td>
+                                    <td class="text-right">58 行</td>
+                                    <td class="text-right">11 行<br><small>(18.9%)</small></td>
+                                    <td class="text-right">21 行<br><small>(36.2%)</small></td>
+                                    <td class="text-right">1 行<br><small>(1.7%)</small></td>
+                                    <td class="text-right">25 行<br><small>(43.1%)</small></td>
+                                </tr>
+                                <tr>
+                                    <td>030.md</td>
+                                    <td class="text-right">85 行</td>
+                                    <td class="text-right">22 行<br><small>(25.8%)</small></td>
+                                    <td class="text-right">25 行<br><small>(29.4%)</small></td>
+                                    <td class="text-right">1 行<br><small>(1.1%)</small></td>
+                                    <td class="text-right">37 行<br><small>(43.5%)</small></td>
+                                </tr>
+                                <tr>
+                                    <td>031.md</td>
+                                    <td class="text-right">97 行</td>
+                                    <td class="text-right">31 行<br><small>(31.9%)</small></td>
+                                    <td class="text-right">27 行<br><small>(27.8%)</small></td>
+                                    <td class="text-right">1 行<br><small>(1%)</small></td>
+                                    <td class="text-right">38 行<br><small>(39.1%)</small></td>
+                                </tr>
+                                <tr>
+                                    <td>032.md</td>
+                                    <td class="text-right">26 行</td>
+                                    <td class="text-right">0 行<br><small>(0%)</small></td>
+                                    <td class="text-right">15 行<br><small>(57.6%)</small></td>
+                                    <td class="text-right">1 行<br><small>(3.8%)</small></td>
+                                    <td class="text-right">10 行<br><small>(38.4%)</small></td>
+                                </tr>
+                                <tr>
+                                    <td>033.md</td>
+                                    <td class="text-right">54 行</td>
+                                    <td class="text-right">15 行<br><small>(27.7%)</small></td>
+                                    <td class="text-right">14 行<br><small>(25.9%)</small></td>
+                                    <td class="text-right">1 行<br><small>(1.8%)</small></td>
+                                    <td class="text-right">24 行<br><small>(44.4%)</small></td>
+                                </tr>
+                                <tr>
+                                    <td>034.md</td>
+                                    <td class="text-right">25 行</td>
+                                    <td class="text-right">0 行<br><small>(0%)</small></td>
+                                    <td class="text-right">15 行<br><small>(60%)</small></td>
+                                    <td class="text-right">1 行<br><small>(4%)</small></td>
+                                    <td class="text-right">9 行<br><small>(36%)</small></td>
+                                </tr>
+                                <tr>
+                                    <td>035.md</td>
+                                    <td class="text-right">48 行</td>
+                                    <td class="text-right">14 行<br><small>(29.1%)</small></td>
+                                    <td class="text-right">12 行<br><small>(25%)</small></td>
+                                    <td class="text-right">1 行<br><small>(2%)</small></td>
+                                    <td class="text-right">21 行<br><small>(43.7%)</small></td>
+                                </tr>
+                                <tr>
+                                    <td>036.md</td>
+                                    <td class="text-right">50 行</td>
+                                    <td class="text-right">21 行<br><small>(42%)</small></td>
+                                    <td class="text-right">10 行<br><small>(20%)</small></td>
+                                    <td class="text-right">1 行<br><small>(2%)</small></td>
+                                    <td class="text-right">18 行<br><small>(36%)</small></td>
+                                </tr>
+                                <tr>
+                                    <td>037.md</td>
+                                    <td class="text-right">60 行</td>
+                                    <td class="text-right">21 行<br><small>(35%)</small></td>
+                                    <td class="text-right">14 行<br><small>(23.3%)</small></td>
+                                    <td class="text-right">1 行<br><small>(1.6%)</small></td>
+                                    <td class="text-right">24 行<br><small>(40%)</small></td>
+                                </tr>
+                                <tr>
+                                    <td>038.md</td>
+                                    <td class="text-right">39 行</td>
+                                    <td class="text-right">11 行<br><small>(28.2%)</small></td>
+                                    <td class="text-right">10 行<br><small>(25.6%)</small></td>
+                                    <td class="text-right">1 行<br><small>(2.5%)</small></td>
+                                    <td class="text-right">17 行<br><small>(43.5%)</small></td>
+                                </tr>
+                                <tr>
+                                    <td>039.md</td>
+                                    <td class="text-right">47 行</td>
+                                    <td class="text-right">12 行<br><small>(25.5%)</small></td>
+                                    <td class="text-right">12 行<br><small>(25.5%)</small></td>
+                                    <td class="text-right">1 行<br><small>(2.1%)</small></td>
+                                    <td class="text-right">22 行<br><small>(46.8%)</small></td>
+                                </tr>
+                                <tr>
+                                    <td>040.md</td>
+                                    <td class="text-right">39 行</td>
+                                    <td class="text-right">1 行<br><small>(2.5%)</small></td>
+                                    <td class="text-right">21 行<br><small>(53.8%)</small></td>
+                                    <td class="text-right">1 行<br><small>(2.5%)</small></td>
+                                    <td class="text-right">16 行<br><small>(41%)</small></td>
+                                </tr>
+                                <tr>
+                                    <td>041.md</td>
+                                    <td class="text-right">120 行</td>
+                                    <td class="text-right">63 行<br><small>(52.5%)</small></td>
+                                    <td class="text-right">19 行<br><small>(15.8%)</small></td>
+                                    <td class="text-right">1 行<br><small>(0.8%)</small></td>
+                                    <td class="text-right">37 行<br><small>(30.8%)</small></td>
+                                </tr>
+                                <tr>
+                                    <td>042.md</td>
+                                    <td class="text-right">46 行</td>
+                                    <td class="text-right">8 行<br><small>(17.3%)</small></td>
+                                    <td class="text-right">20 行<br><small>(43.4%)</small></td>
+                                    <td class="text-right">1 行<br><small>(2.1%)</small></td>
+                                    <td class="text-right">17 行<br><small>(36.9%)</small></td>
+                                </tr>
+                                <tr>
+                                    <td>043.md</td>
+                                    <td class="text-right">31 行</td>
+                                    <td class="text-right">6 行<br><small>(19.3%)</small></td>
+                                    <td class="text-right">9 行<br><small>(29%)</small></td>
+                                    <td class="text-right">1 行<br><small>(3.2%)</small></td>
+                                    <td class="text-right">15 行<br><small>(48.3%)</small></td>
+                                </tr>
+                                <tr>
+                                    <td>044.md</td>
+                                    <td class="text-right">47 行</td>
+                                    <td class="text-right">14 行<br><small>(29.7%)</small></td>
+                                    <td class="text-right">15 行<br><small>(31.9%)</small></td>
+                                    <td class="text-right">1 行<br><small>(2.1%)</small></td>
+                                    <td class="text-right">17 行<br><small>(36.1%)</small></td>
+                                </tr>
+                                <tr>
+                                    <td>045.md</td>
+                                    <td class="text-right">43 行</td>
+                                    <td class="text-right">12 行<br><small>(27.9%)</small></td>
+                                    <td class="text-right">17 行<br><small>(39.5%)</small></td>
+                                    <td class="text-right">1 行<br><small>(2.3%)</small></td>
+                                    <td class="text-right">13 行<br><small>(30.2%)</small></td>
+                                </tr>
+                                <tr>
+                                    <td>046.md</td>
+                                    <td class="text-right">34 行</td>
+                                    <td class="text-right">6 行<br><small>(17.6%)</small></td>
+                                    <td class="text-right">15 行<br><small>(44.1%)</small></td>
+                                    <td class="text-right">1 行<br><small>(2.9%)</small></td>
+                                    <td class="text-right">12 行<br><small>(35.2%)</small></td>
+                                </tr>
+                                <tr>
+                                    <td>047.md</td>
+                                    <td class="text-right">64 行</td>
+                                    <td class="text-right">21 行<br><small>(32.8%)</small></td>
+                                    <td class="text-right">20 行<br><small>(31.2%)</small></td>
+                                    <td class="text-right">1 行<br><small>(1.5%)</small></td>
+                                    <td class="text-right">22 行<br><small>(34.3%)</small></td>
+                                </tr>
+                                <tr>
+                                    <td>048.md</td>
+                                    <td class="text-right">37 行</td>
+                                    <td class="text-right">10 行<br><small>(27%)</small></td>
+                                    <td class="text-right">10 行<br><small>(27%)</small></td>
+                                    <td class="text-right">1 行<br><small>(2.7%)</small></td>
+                                    <td class="text-right">16 行<br><small>(43.2%)</small></td>
+                                </tr>
+                                <tr>
+                                    <td>049.md</td>
+                                    <td class="text-right">29 行</td>
+                                    <td class="text-right">2 行<br><small>(6.8%)</small></td>
+                                    <td class="text-right">15 行<br><small>(51.7%)</small></td>
+                                    <td class="text-right">1 行<br><small>(3.4%)</small></td>
+                                    <td class="text-right">11 行<br><small>(37.9%)</small></td>
+                                </tr>
+                                <tr>
+                                    <td>050.md</td>
+                                    <td class="text-right">27 行</td>
+                                    <td class="text-right">0 行<br><small>(0%)</small></td>
+                                    <td class="text-right">16 行<br><small>(59.2%)</small></td>
+                                    <td class="text-right">1 行<br><small>(3.7%)</small></td>
+                                    <td class="text-right">10 行<br><small>(37%)</small></td>
+                                </tr>
+                                <tr>
+                                    <td>051.md</td>
+                                    <td class="text-right">28 行</td>
+                                    <td class="text-right">0 行<br><small>(0%)</small></td>
+                                    <td class="text-right">17 行<br><small>(60.7%)</small></td>
+                                    <td class="text-right">1 行<br><small>(3.5%)</small></td>
+                                    <td class="text-right">10 行<br><small>(35.7%)</small></td>
+                                </tr>
+                                <tr>
+                                    <td>052.md</td>
+                                    <td class="text-right">62 行</td>
+                                    <td class="text-right">17 行<br><small>(27.4%)</small></td>
+                                    <td class="text-right">18 行<br><small>(29%)</small></td>
+                                    <td class="text-right">1 行<br><small>(1.6%)</small></td>
+                                    <td class="text-right">26 行<br><small>(41.9%)</small></td>
+                                </tr>
+                                <tr>
+                                    <td>053.md</td>
+                                    <td class="text-right">78 行</td>
+                                    <td class="text-right">28 行<br><small>(35.8%)</small></td>
+                                    <td class="text-right">18 行<br><small>(23%)</small></td>
+                                    <td class="text-right">1 行<br><small>(1.2%)</small></td>
+                                    <td class="text-right">31 行<br><small>(39.7%)</small></td>
+                                </tr>
+                                <tr>
+                                    <td>054.md</td>
+                                    <td class="text-right">53 行</td>
+                                    <td class="text-right">14 行<br><small>(26.4%)</small></td>
+                                    <td class="text-right">16 行<br><small>(30.1%)</small></td>
+                                    <td class="text-right">1 行<br><small>(1.8%)</small></td>
+                                    <td class="text-right">22 行<br><small>(41.5%)</small></td>
+                                </tr>
+                                <tr>
+                                    <td>055.md</td>
+                                    <td class="text-right">55 行</td>
+                                    <td class="text-right">1 行<br><small>(1.8%)</small></td>
+                                    <td class="text-right">36 行<br><small>(65.4%)</small></td>
+                                    <td class="text-right">1 行<br><small>(1.8%)</small></td>
+                                    <td class="text-right">17 行<br><small>(30.9%)</small></td>
+                                </tr>
+                                <tr>
+                                    <td>056.md</td>
+                                    <td class="text-right">65 行</td>
+                                    <td class="text-right">15 行<br><small>(23%)</small></td>
+                                    <td class="text-right">26 行<br><small>(40%)</small></td>
+                                    <td class="text-right">1 行<br><small>(1.5%)</small></td>
+                                    <td class="text-right">23 行<br><small>(35.3%)</small></td>
+                                </tr>
+                                <tr>
+                                    <td>057.md</td>
+                                    <td class="text-right">53 行</td>
+                                    <td class="text-right">5 行<br><small>(9.4%)</small></td>
+                                    <td class="text-right">30 行<br><small>(56.6%)</small></td>
+                                    <td class="text-right">1 行<br><small>(1.8%)</small></td>
+                                    <td class="text-right">17 行<br><small>(32%)</small></td>
+                                </tr>
+                                <tr>
+                                    <td>058.md</td>
+                                    <td class="text-right">65 行</td>
+                                    <td class="text-right">11 行<br><small>(16.9%)</small></td>
+                                    <td class="text-right">31 行<br><small>(47.6%)</small></td>
+                                    <td class="text-right">1 行<br><small>(1.5%)</small></td>
+                                    <td class="text-right">22 行<br><small>(33.8%)</small></td>
+                                </tr>
+                                <tr>
+                                    <td>059.md</td>
+                                    <td class="text-right">82 行</td>
+                                    <td class="text-right">35 行<br><small>(42.6%)</small></td>
+                                    <td class="text-right">18 行<br><small>(21.9%)</small></td>
+                                    <td class="text-right">1 行<br><small>(1.2%)</small></td>
+                                    <td class="text-right">28 行<br><small>(34.1%)</small></td>
+                                </tr>
+                                <tr>
+                                    <td>060.md</td>
+                                    <td class="text-right">43 行</td>
+                                    <td class="text-right">15 行<br><small>(34.8%)</small></td>
+                                    <td class="text-right">10 行<br><small>(23.2%)</small></td>
+                                    <td class="text-right">1 行<br><small>(2.3%)</small></td>
+                                    <td class="text-right">17 行<br><small>(39.5%)</small></td>
+                                </tr>
+                                <tr>
+                                    <td>061.md</td>
+                                    <td class="text-right">58 行</td>
+                                    <td class="text-right">13 行<br><small>(22.4%)</small></td>
+                                    <td class="text-right">24 行<br><small>(41.3%)</small></td>
+                                    <td class="text-right">1 行<br><small>(1.7%)</small></td>
+                                    <td class="text-right">20 行<br><small>(34.4%)</small></td>
+                                </tr>
+                                <tr>
+                                    <td>062.md</td>
+                                    <td class="text-right">76 行</td>
+                                    <td class="text-right">14 行<br><small>(18.4%)</small></td>
+                                    <td class="text-right">28 行<br><small>(36.8%)</small></td>
+                                    <td class="text-right">1 行<br><small>(1.3%)</small></td>
+                                    <td class="text-right">33 行<br><small>(43.4%)</small></td>
+                                </tr>
+                                <tr>
+                                    <td>063.md</td>
+                                    <td class="text-right">61 行</td>
+                                    <td class="text-right">1 行<br><small>(1.6%)</small></td>
+                                    <td class="text-right">39 行<br><small>(63.9%)</small></td>
+                                    <td class="text-right">1 行<br><small>(1.6%)</small></td>
+                                    <td class="text-right">20 行<br><small>(32.7%)</small></td>
+                                </tr>
+                                <tr>
+                                    <td>064.md</td>
+                                    <td class="text-right">60 行</td>
+                                    <td class="text-right">2 行<br><small>(3.3%)</small></td>
+                                    <td class="text-right">37 行<br><small>(61.6%)</small></td>
+                                    <td class="text-right">1 行<br><small>(1.6%)</small></td>
+                                    <td class="text-right">20 行<br><small>(33.3%)</small></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-6 col-sm-12">
+
+                <div class="card mb-3">
+                    <div class="card-header p-2">
+                        使用されているルビ文字の一覧
+                    </div>
+                    <div class="card-body p-2">
+                        <table class="table table-sm">
+                            <thead>
+                                <tr>
+                                    <th>ファイル名</th>
+                                    <th>ルビ文字</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tbody>
+                                    <tr>
+                                        <td>001.md</td>
+                                        <td>
+                                                <span class="badge badge-light font-weight-normal">｜魔力《リソース》</span>
+                                                <span class="badge badge-light font-weight-normal">｜藤倉紅子《ふじくらこうこ》</span>
+                                                <span class="badge badge-light font-weight-normal">｜システムエンジニア《SE》</span>
+                                                <span class="badge badge-light font-weight-normal">｜割当《アサイン》</span>
+                                                <span class="badge badge-light font-weight-normal">｜仕事《プロジェクト》</span>
+                                                <span class="badge badge-light font-weight-normal">｜活動《アクティビティ》</span>
+                                                <span class="badge badge-light font-weight-normal">｜魔族《メンバー》</span>
+                                                <span class="badge badge-light font-weight-normal">｜Redmine《レッドマイン》</span>
+                                                <span class="badge badge-light font-weight-normal">｜仕事相手《パートナー》</span>
+                                                <span class="badge badge-light font-weight-normal">｜戦闘《プロジェクト》</span>
+                                                <span class="badge badge-light font-weight-normal">｜上司《うえ》</span>
+                                                <span class="badge badge-light font-weight-normal">｜プロジェクトマネージャー《PM》</span>
+                                                <span class="badge badge-light font-weight-normal">｜進行中《Assigned》</span>
+                                                <span class="badge badge-light font-weight-normal">｜継続不可能《Rejected》</span>
+                                                <span class="badge badge-light font-weight-normal">｜魔物《ヒト》</span>
+                                                <span class="badge badge-light font-weight-normal">｜戦闘《プロジェクト》</span>
+                                                <span class="badge badge-light font-weight-normal">｜割当《アサイン》</span>
+                                                <span class="badge badge-light font-weight-normal">｜作業完了《Resolved》</span>
+                                                <span class="badge badge-light font-weight-normal">｜終了《Closed》</span>
+                                                <span class="badge badge-light font-weight-normal">｜納品《リリース》</span>
+                                                <span class="badge badge-light font-weight-normal">｜成果物《プロダクト》</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>002.md</td>
+                                        <td>
+                                                <span class="badge badge-light font-weight-normal">｜藤倉紅子《ふじくらこうこ》</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>003.md</td>
+                                        <td>
+                                                <span class="badge badge-light font-weight-normal">｜藤倉紅子《ふじくらこうこ》</span>
+                                                <span class="badge badge-light font-weight-normal">｜システムエンジニア《SE》</span>
+                                                <span class="badge badge-light font-weight-normal">｜Redmine《レッドマイン》</span>
+                                                <span class="badge badge-light font-weight-normal">｜紅《レッド》</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>004.md</td>
+                                        <td>
+                                                <span class="badge badge-light font-weight-normal">｜魔物《モンスター》</span>
+                                                <span class="badge badge-light font-weight-normal">｜捌《さば》</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>005.md</td>
+                                        <td>
+                                                <span class="badge badge-light font-weight-normal">｜顧客《クライアント》</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>006.md</td>
+                                        <td>
+                                                <span class="badge badge-light font-weight-normal">｜魔物《こ》</span>
+                                                <span class="badge badge-light font-weight-normal">｜端末《コンソール》</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>007.md</td>
+                                        <td>
+                                                <span class="badge badge-light font-weight-normal">｜プログラマー《PG》</span>
+                                                <span class="badge badge-light font-weight-normal">｜システムエンジニア《SE》</span>
+                                                <span class="badge badge-light font-weight-normal">｜プロジェクトマネージャー《PM》</span>
+                                                <span class="badge badge-light font-weight-normal">｜理《ことわり》</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>008.md</td>
+                                        <td>
+                                                <span class="badge badge-light font-weight-normal">｜素子《ビット》</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>009.md</td>
+                                        <td>
+                                                <span class="badge badge-light font-weight-normal">｜管理者《root》</span>
+                                                <span class="badge badge-light font-weight-normal">｜Redmine《レッドマイン》</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>010.md</td>
+                                        <td>
+                                                <span class="badge badge-light font-weight-normal">｜Redmine《レッドマイン》</span>
+                                                <span class="badge badge-light font-weight-normal">｜抵抗勢力《レジスタンス》</span>
+                                                <span class="badge badge-light font-weight-normal">｜無効化《オフ》</span>
+                                                <span class="badge badge-light font-weight-normal">｜待機《スタンバイ》</span>
+                                                <span class="badge badge-light font-weight-normal">｜稼働《アクティブ》</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>011.md</td>
+                                        <td>
+                                                <span class="badge badge-light font-weight-normal">｜Redmine《レッドマイン》</span>
+                                                <span class="badge badge-light font-weight-normal">｜管理者《マネージャー》</span>
+                                                <span class="badge badge-light font-weight-normal">｜システムエンジニア《SE》</span>
+                                                <span class="badge badge-light font-weight-normal">｜プロジェクトマネージャー《PM》</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>012.md</td>
+                                        <td>
+                                                <span class="badge badge-light font-weight-normal">｜軋《きし》</span>
+                                                <span class="badge badge-light font-weight-normal">｜Redmine《レッドマイン》</span>
+                                                <span class="badge badge-light font-weight-normal">｜緑の格子盤《グリーンボード》</span>
+                                                <span class="badge badge-light font-weight-normal">｜プログラマー《PG》</span>
+                                                <span class="badge badge-light font-weight-normal">｜システムエンジニア《SE》</span>
+                                                <span class="badge badge-light font-weight-normal">｜紅の宝庫《レッドマイン》</span>
+                                                <span class="badge badge-light font-weight-normal">｜プロジェクトマネージャー《PM》</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>013.md</td>
+                                        <td>
+                                                <span class="badge badge-light font-weight-normal">｜プロジェクトオーナー《PO》</span>
+                                                <span class="badge badge-light font-weight-normal">｜プロジェクトマネージャー《PM》</span>
+                                                <span class="badge badge-light font-weight-normal">｜緑の格子盤《グリーンボード》</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>014.md</td>
+                                        <td>
+                                                <span class="badge badge-light font-weight-normal">｜顧客《クライアント》</span>
+                                                <span class="badge badge-light font-weight-normal">｜魔力《リソース》</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>015.md</td>
+                                        <td>
+                                                <span class="badge badge-light font-weight-normal">｜緑の格子盤《グリーンボード》</span>
+                                                <span class="badge badge-light font-weight-normal">｜戦力《メンバー》</span>
+                                                <span class="badge badge-light font-weight-normal">｜小鬼《インプ》</span>
+                                                <span class="badge badge-light font-weight-normal">｜精霊《ブラウニー》</span>
+                                                <span class="badge badge-light font-weight-normal">｜魔力《リソース》</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>016.md</td>
+                                        <td>
+                                                <span class="badge badge-light font-weight-normal">｜プロジェクトマネージャー《PM》</span>
+                                                <span class="badge badge-light font-weight-normal">｜レイラ《お母さん》</span>
+                                                <span class="badge badge-light font-weight-normal">｜初期値《デフォルト》</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>017.md</td>
+                                        <td>
+                                                <span class="badge badge-light font-weight-normal">｜進行中《Assigned》</span>
+                                                <span class="badge badge-light font-weight-normal">｜進捗《ステータス》</span>
+                                                <span class="badge badge-light font-weight-normal">｜初期値《デフォルト》</span>
+                                                <span class="badge badge-light font-weight-normal">｜新規《New》</span>
+                                                <span class="badge badge-light font-weight-normal">｜新規《New》</span>
+                                                <span class="badge badge-light font-weight-normal">｜進行中《Assigned》</span>
+                                                <span class="badge badge-light font-weight-normal">｜解決《Resolved》</span>
+                                                <span class="badge badge-light font-weight-normal">｜解決《Resolved》</span>
+                                                <span class="badge badge-light font-weight-normal">｜品質検査《レビュー》</span>
+                                                <span class="badge badge-light font-weight-normal">｜フィードバック《Feedback》</span>
+                                                <span class="badge badge-light font-weight-normal">｜終了《Closed》</span>
+                                                <span class="badge badge-light font-weight-normal">｜継続不可能《Rejected》</span>
+                                                <span class="badge badge-light font-weight-normal">｜魔物《チケット》</span>
+                                                <span class="badge badge-light font-weight-normal">｜一体《ひとり》</span>
+                                                <span class="badge badge-light font-weight-normal">｜継続不可能《Rejected》</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>018.md</td>
+                                        <td>
+                                                <span class="badge badge-light font-weight-normal">｜魔物《メンバー》</span>
+                                                <span class="badge badge-light font-weight-normal">｜継続不可能《Rejected》</span>
+                                                <span class="badge badge-light font-weight-normal">｜新規《New》</span>
+                                                <span class="badge badge-light font-weight-normal">｜終了《Closed》</span>
+                                                <span class="badge badge-light font-weight-normal">｜役割《ロール》</span>
+                                                <span class="badge badge-light font-weight-normal">｜解決《Resolved》</span>
+                                                <span class="badge badge-light font-weight-normal">｜終了《Closed》</span>
+                                                <span class="badge badge-light font-weight-normal">｜終了《Closed》</span>
+                                                <span class="badge badge-light font-weight-normal">｜終了《Closed》</span>
+                                                <span class="badge badge-light font-weight-normal">｜緑の格子盤《グリーンボード》</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>019.md</td>
+                                        <td>
+                                                <span class="badge badge-light font-weight-normal">｜精霊《ブラウニー》</span>
+                                                <span class="badge badge-light font-weight-normal">｜緑の格子盤《グリーンボード》</span>
+                                                <span class="badge badge-light font-weight-normal">｜精霊《その子》</span>
+                                                <span class="badge badge-light font-weight-normal">｜レイラ《お母さん》</span>
+                                                <span class="badge badge-light font-weight-normal">｜役割《ロール》</span>
+                                                <span class="badge badge-light font-weight-normal">｜管理者《Manager》</span>
+                                                <span class="badge badge-light font-weight-normal">｜開発者《Developer》</span>
+                                                <span class="badge badge-light font-weight-normal">｜報告者《Reporter》</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>020.md</td>
+                                        <td>
+                                                <span class="badge badge-light font-weight-normal">｜レイラ《お母さん》</span>
+                                                <span class="badge badge-light font-weight-normal">｜書き置き《README》</span>
+                                                <span class="badge badge-light font-weight-normal">｜緑の格子盤《グリーンボード》</span>
+                                                <span class="badge badge-light font-weight-normal">｜新規《New》</span>
+                                                <span class="badge badge-light font-weight-normal">｜割当《アサイン》</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>021.md</td>
+                                        <td>
+                                                <span class="badge badge-light font-weight-normal">｜緑の格子盤《グリーンボード》</span>
+                                                <span class="badge badge-light font-weight-normal">｜システムエンジニア《SE》</span>
+                                                <span class="badge badge-light font-weight-normal">｜標石《マイルストーン》</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>022.md</td>
+                                        <td>
+                                                <span class="badge badge-light font-weight-normal">｜緑の格子盤《グリーンボード》</span>
+                                                <span class="badge badge-light font-weight-normal">｜緑地《みどりじ》</span>
+                                                <span class="badge badge-light font-weight-normal">｜抵抗勢力《レジスタンス》</span>
+                                                <span class="badge badge-light font-weight-normal">｜魔力通信網《ネット》</span>
+                                                <span class="badge badge-light font-weight-normal">｜地上索敵機《ホリゾンタル・ルックアップ》</span>
+                                                <span class="badge badge-light font-weight-normal">｜偽情報《ダミー》</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>023.md</td>
+                                        <td>
+                                                <span class="badge badge-light font-weight-normal">｜緑の格子盤《グリーンボード》</span>
+                                                <span class="badge badge-light font-weight-normal">｜地上索敵機《ホリゾンタル・ルックアップ》</span>
+                                                <span class="badge badge-light font-weight-normal">｜強制帰還《ループバック》</span>
+                                                <span class="badge badge-light font-weight-normal">｜待機系運用《スイッチオーバー》</span>
+                                                <span class="badge badge-light font-weight-normal">｜強制帰還《ループバック》</span>
+                                                <span class="badge badge-light font-weight-normal">｜死活監視《ポーリング》</span>
+                                                <span class="badge badge-light font-weight-normal">｜待機系運用《スイッチオーバー》</span>
+                                                <span class="badge badge-light font-weight-normal">｜機械魔獣識別子《アドレス》</span>
+                                                <span class="badge badge-light font-weight-normal">｜紅の宝庫《レッドマイン》</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>024.md</td>
+                                        <td>
+                                                <span class="badge badge-light font-weight-normal">｜手法《メソッド》</span>
+                                                <span class="badge badge-light font-weight-normal">｜魔物《オーク》</span>
+                                                <span class="badge badge-light font-weight-normal">｜最善の方法《ベストプラクティス》</span>
+                                                <span class="badge badge-light font-weight-normal">｜魔物《タロ》</span>
+                                                <span class="badge badge-light font-weight-normal">｜親指を立てる仕草《サムズアップ》</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>025.md</td>
+                                        <td>
+                                                <span class="badge badge-light font-weight-normal">｜魔物《オーク》</span>
+                                                <span class="badge badge-light font-weight-normal">｜魔法障壁《ファイヤーウォール》</span>
+                                                <span class="badge badge-light font-weight-normal">｜紅の宝庫《レッドマイン》</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>026.md</td>
+                                        <td>
+                                                <span class="badge badge-light font-weight-normal">｜攣《つ》</span>
+                                                <span class="badge badge-light font-weight-normal">｜進行中《Assigned》</span>
+                                                <span class="badge badge-light font-weight-normal">｜終了《Closed》</span>
+                                                <span class="badge badge-light font-weight-normal">｜割り当て《アサイン》</span>
+                                                <span class="badge badge-light font-weight-normal">｜システムエンジニア《SE》</span>
+                                                <span class="badge badge-light font-weight-normal">｜サーバー《あたし》</span>
+                                                <span class="badge badge-light font-weight-normal">｜仕事着《スーツ》</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>027.md</td>
+                                        <td>
+                                                <span class="badge badge-light font-weight-normal">｜緑の格子盤《グリーンボード》</span>
+                                                <span class="badge badge-light font-weight-normal">｜地上索敵機《ホリゾンタル・ルックアップ》</span>
+                                                <span class="badge badge-light font-weight-normal">｜魔物《オーク》</span>
+                                                <span class="badge badge-light font-weight-normal">｜標石《マイルストーン》</span>
+                                                <span class="badge badge-light font-weight-normal">｜緑地《みどりじ》</span>
+                                                <span class="badge badge-light font-weight-normal">｜緑の格子盤《グリーンボード》</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>028.md</td>
+                                        <td>
+                                                <span class="badge badge-light font-weight-normal">｜魔獣《イルカ》</span>
+                                                <span class="badge badge-light font-weight-normal">｜プロジェクトマネージャー《PM》</span>
+                                                <span class="badge badge-light font-weight-normal">｜プロジェクトオーナー《PO》</span>
+                                                <span class="badge badge-light font-weight-normal">｜魔物《オーク》</span>
+                                                <span class="badge badge-light font-weight-normal">｜魔物《メンバー》</span>
+                                                <span class="badge badge-light font-weight-normal">｜割り当て《アサイン》</span>
+                                                <span class="badge badge-light font-weight-normal">｜蜘蛛少女《アラクネ》</span>
+                                                <span class="badge badge-light font-weight-normal">｜紅の宝庫《レッドマイン》</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>029.md</td>
+                                        <td>
+                                                <span class="badge badge-light font-weight-normal">｜魔物《オーク》</span>
+                                                <span class="badge badge-light font-weight-normal">｜魔獣《イルカ》</span>
+                                                <span class="badge badge-light font-weight-normal">｜蜘蛛少女《アラクネ》</span>
+                                                <span class="badge badge-light font-weight-normal">｜魔物《メンバー》</span>
+                                                <span class="badge badge-light font-weight-normal">｜割り当て《アサイン》</span>
+                                                <span class="badge badge-light font-weight-normal">｜進行中《Assigned》</span>
+                                                <span class="badge badge-light font-weight-normal">｜魔法障壁《ファイヤーウォール》</span>
+                                                <span class="badge badge-light font-weight-normal">｜継続不可能《Rejected》</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>030.md</td>
+                                        <td>
+                                                <span class="badge badge-light font-weight-normal">｜朦朧《もうろう》</span>
+                                                <span class="badge badge-light font-weight-normal">｜魔獣《イルカ》</span>
+                                                <span class="badge badge-light font-weight-normal">｜継続不可能《Rejected》</span>
+                                                <span class="badge badge-light font-weight-normal">｜蜘蛛少女《アラクネ》</span>
+                                                <span class="badge badge-light font-weight-normal">｜プロジェクトマネージャー《PM》</span>
+                                                <span class="badge badge-light font-weight-normal">｜信号衝突《コリジョン》</span>
+                                                <span class="badge badge-light font-weight-normal">｜緑の格子盤《グリーンボード》</span>
+                                                <span class="badge badge-light font-weight-normal">｜可変域所有者《non-embedded》</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>031.md</td>
+                                        <td>
+                                                <span class="badge badge-light font-weight-normal">｜可変域所有者《ノンエンベデッド》</span>
+                                                <span class="badge badge-light font-weight-normal">｜能力《パッケージ》</span>
+                                                <span class="badge badge-light font-weight-normal">｜魔力《リソース》</span>
+                                                <span class="badge badge-light font-weight-normal">｜解決《Resolved》</span>
+                                                <span class="badge badge-light font-weight-normal">｜レヴィ《サーバー》</span>
+                                                <span class="badge badge-light font-weight-normal">｜魔力通信《ネットワーク》</span>
+                                                <span class="badge badge-light font-weight-normal">｜負荷分散《ロードバランシング》</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>032.md</td>
+                                        <td>
+                                                <span class="badge badge-light font-weight-normal">｜天馬《ペガサス》</span>
+                                                <span class="badge badge-light font-weight-normal">｜割当《アサイン》</span>
+                                                <span class="badge badge-light font-weight-normal">｜負荷分散《ロードバランシング》</span>
+                                                <span class="badge badge-light font-weight-normal">｜魔力共有《ロードバランシング》</span>
+                                                <span class="badge badge-light font-weight-normal">｜主役《プライマリーサーバー》</span>
+                                                <span class="badge badge-light font-weight-normal">｜経緯《いきさつ》</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>033.md</td>
+                                        <td>
+                                                <span class="badge badge-light font-weight-normal">｜緑の格子盤《グリーンボード》</span>
+                                                <span class="badge badge-light font-weight-normal">｜書き置き《README》</span>
+                                                <span class="badge badge-light font-weight-normal">｜紅の宝庫《レッドマイン》</span>
+                                                <span class="badge badge-light font-weight-normal">｜可変域所有者《ノンエンベデッド》</span>
+                                                <span class="badge badge-light font-weight-normal">｜紅の宝庫《レッドマイン》</span>
+                                                <span class="badge badge-light font-weight-normal">｜強張《こわば》</span>
+                                                <span class="badge badge-light font-weight-normal">｜プロジェクトマネージャー《PM》</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>034.md</td>
+                                        <td>
+                                                <span class="badge badge-light font-weight-normal">｜解決《Resolved》</span>
+                                                <span class="badge badge-light font-weight-normal">｜信号衝突《コリジョン》</span>
+                                                <span class="badge badge-light font-weight-normal">｜探知機《ビーコン》</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>035.md</td>
+                                        <td>
+                                                <span class="badge badge-light font-weight-normal">｜緑の格子盤《グリーンボード》</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>036.md</td>
+                                        <td>
+                                                <span class="badge badge-light font-weight-normal">｜地上索敵機《ホリゾンタル・ルックアップ》</span>
+                                                <span class="badge badge-light font-weight-normal">｜空中索敵機《バーティカル・ルックアップ》</span>
+                                                <span class="badge badge-light font-weight-normal">｜魔獣《イルカ》</span>
+                                                <span class="badge badge-light font-weight-normal">｜南《そっち》</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>037.md</td>
+                                        <td>
+                                                <span class="badge badge-light font-weight-normal">｜私《PM》</span>
+                                                <span class="badge badge-light font-weight-normal">｜レイラ《お母さん》</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>038.md</td>
+                                        <td>
+                                                <span class="badge badge-light font-weight-normal">｜緑の格子盤《グリーンボード》</span>
+                                                <span class="badge badge-light font-weight-normal">｜紅の宝庫《レッドマイン》</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>039.md</td>
+                                        <td>
+                                                <span class="badge badge-light font-weight-normal">｜全方位弾《ブロードキャスト・パケット》</span>
+                                                <span class="badge badge-light font-weight-normal">｜要求爆撃《スマーフ・アタック》</span>
+                                                <span class="badge badge-light font-weight-normal">｜雹《ひょう》</span>
+                                                <span class="badge badge-light font-weight-normal">｜遅延過多《ハイ・レイテンシー》</span>
+                                                <span class="badge badge-light font-weight-normal">｜負荷分散《ロードバランシング》</span>
+                                                <span class="badge badge-light font-weight-normal">｜プロジェクトマネージャー《PM》</span>
+                                                <span class="badge badge-light font-weight-normal">｜魔物《メンバー》</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>040.md</td>
+                                        <td>
+                                                <span class="badge badge-light font-weight-normal">｜緑の格子盤《グリーンボード》</span>
+                                                <span class="badge badge-light font-weight-normal">｜書き置き《README》</span>
+                                                <span class="badge badge-light font-weight-normal">｜割当《アサイン》</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>041.md</td>
+                                        <td>
+                                                <span class="badge badge-light font-weight-normal">｜緑の格子盤《グリーンボード》</span>
+                                                <span class="badge badge-light font-weight-normal">｜動画配信《キャスティング》</span>
+                                                <span class="badge badge-light font-weight-normal">｜虫《ワーム》</span>
+                                                <span class="badge badge-light font-weight-normal">｜魔力通信網《ネット》</span>
+                                                <span class="badge badge-light font-weight-normal">｜可変域所有者《non－embedded》</span>
+                                                <span class="badge badge-light font-weight-normal">｜魔力《スペック》</span>
+                                                <span class="badge badge-light font-weight-normal">｜魔力通信《ネットワーク》</span>
+                                                <span class="badge badge-light font-weight-normal">｜記録《データベース》</span>
+                                                <span class="badge badge-light font-weight-normal">｜魔力《スペック》</span>
+                                                <span class="badge badge-light font-weight-normal">｜プロジェクトマネージャー《PM》</span>
+                                                <span class="badge badge-light font-weight-normal">｜戦い《プロジェクト》</span>
+                                                <span class="badge badge-light font-weight-normal">｜紅の宝庫《わたしたち》</span>
+                                                <span class="badge badge-light font-weight-normal">｜心拍数《クロック》</span>
+                                                <span class="badge badge-light font-weight-normal">｜精神《ルート》</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>042.md</td>
+                                        <td>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>043.md</td>
+                                        <td>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>044.md</td>
+                                        <td>
+                                                <span class="badge badge-light font-weight-normal">｜Wiki《ウィキ》</span>
+                                                <span class="badge badge-light font-weight-normal">｜Wiki《ウィキ》</span>
+                                                <span class="badge badge-light font-weight-normal">｜事実上の標準《デファクトスタンダード》</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>045.md</td>
+                                        <td>
+                                                <span class="badge badge-light font-weight-normal">｜議題《アジェンダ》</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>046.md</td>
+                                        <td>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>047.md</td>
+                                        <td>
+                                                <span class="badge badge-light font-weight-normal">｜装飾《デコ》</span>
+                                                <span class="badge badge-light font-weight-normal">｜hair《髪》</span>
+                                                <span class="badge badge-light font-weight-normal">｜color《色》</span>
+                                                <span class="badge badge-light font-weight-normal">｜turquoise《青緑》</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>048.md</td>
+                                        <td>
+                                                <span class="badge badge-light font-weight-normal">｜レイラ《お母さん》</span>
+                                                <span class="badge badge-light font-weight-normal">｜魔族《エンジニア》</span>
+                                                <span class="badge badge-light font-weight-normal">｜香り《アロマ》</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>049.md</td>
+                                        <td>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>050.md</td>
+                                        <td>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>051.md</td>
+                                        <td>
+                                                <span class="badge badge-light font-weight-normal">｜レイラ《お母さん》</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>052.md</td>
+                                        <td>
+                                                <span class="badge badge-light font-weight-normal">｜信号衝突《コリジョン》</span>
+                                                <span class="badge badge-light font-weight-normal">｜信号衝突《コリジョン》</span>
+                                                <span class="badge badge-light font-weight-normal">｜プロジェクトマネージャー《PM》</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>053.md</td>
+                                        <td>
+                                                <span class="badge badge-light font-weight-normal">｜会議《ミーティング》</span>
+                                                <span class="badge badge-light font-weight-normal">｜紅の宝庫《レッドマイン》</span>
+                                                <span class="badge badge-light font-weight-normal">｜国家運営《プロジェクト管理》</span>
+                                                <span class="badge badge-light font-weight-normal">｜緑の格子盤《グリーンボード》</span>
+                                                <span class="badge badge-light font-weight-normal">｜協力者《ユーザー》</span>
+                                                <span class="badge badge-light font-weight-normal">｜顧客《クライアント》</span>
+                                                <span class="badge badge-light font-weight-normal">｜紅子様《PM》</span>
+                                                <span class="badge badge-light font-weight-normal">｜新規《New》</span>
+                                                <span class="badge badge-light font-weight-normal">｜会議《ミーティング》</span>
+                                                <span class="badge badge-light font-weight-normal">｜進行中《Assigned》</span>
+                                                <span class="badge badge-light font-weight-normal">｜割り当て《アサイン》</span>
+                                                <span class="badge badge-light font-weight-normal">｜決戦《プロジェクト》</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>054.md</td>
+                                        <td>
+                                                <span class="badge badge-light font-weight-normal">｜緑の格子盤《グリーンボード》</span>
+                                                <span class="badge badge-light font-weight-normal">｜紅の宝庫《レッドマイン》</span>
+                                                <span class="badge badge-light font-weight-normal">｜指令《シート》</span>
+                                                <span class="badge badge-light font-weight-normal">｜指令《シート》</span>
+                                                <span class="badge badge-light font-weight-normal">｜指令《シート》</span>
+                                                <span class="badge badge-light font-weight-normal">｜指令《シート》</span>
+                                                <span class="badge badge-light font-weight-normal">｜指令《シート》</span>
+                                                <span class="badge badge-light font-weight-normal">｜指令《シート》</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>055.md</td>
+                                        <td>
+                                                <span class="badge badge-light font-weight-normal">｜信号衝突《コリジョン》</span>
+                                                <span class="badge badge-light font-weight-normal">｜魔力通信《ネットワーク》</span>
+                                                <span class="badge badge-light font-weight-normal">｜虫《ワーム》</span>
+                                                <span class="badge badge-light font-weight-normal">｜可変域所有者《nonーembedded》</span>
+                                                <span class="badge badge-light font-weight-normal">｜緑の格子盤《グリーンボード》</span>
+                                                <span class="badge badge-light font-weight-normal">｜紅の宝庫《レッドマイン》</span>
+                                                <span class="badge badge-light font-weight-normal">｜魔力枯渇《シン・フラッド》</span>
+                                                <span class="badge badge-light font-weight-normal">｜光の弾《パケット》</span>
+                                                <span class="badge badge-light font-weight-normal">｜光の弾《パケット》</span>
+                                                <span class="badge badge-light font-weight-normal">｜光の弾《パケット》</span>
+                                                <span class="badge badge-light font-weight-normal">｜魔力《リソース》</span>
+                                                <span class="badge badge-light font-weight-normal">｜割り当て《アサイン》</span>
+                                                <span class="badge badge-light font-weight-normal">｜解決《Resolved》</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>056.md</td>
+                                        <td>
+                                                <span class="badge badge-light font-weight-normal">｜信号衝突《コリジョン》</span>
+                                                <span class="badge badge-light font-weight-normal">｜プロジェクトマネージャー《PM》</span>
+                                                <span class="badge badge-light font-weight-normal">｜緑の格子盤《グリーンボード》</span>
+                                                <span class="badge badge-light font-weight-normal">｜割り当て《アサイン》</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>057.md</td>
+                                        <td>
+                                                <span class="badge badge-light font-weight-normal">｜紅の宝庫《レッドマイン》</span>
+                                                <span class="badge badge-light font-weight-normal">｜参謀《PM》</span>
+                                                <span class="badge badge-light font-weight-normal">｜プロジェクトマネージャー《PM》</span>
+                                                <span class="badge badge-light font-weight-normal">｜大仕事《チケット》</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>058.md</td>
+                                        <td>
+                                                <span class="badge badge-light font-weight-normal">｜信号衝突《コリジョン》</span>
+                                                <span class="badge badge-light font-weight-normal">｜魔物《オーク》</span>
+                                                <span class="badge badge-light font-weight-normal">｜会議《ミーティング》</span>
+                                                <span class="badge badge-light font-weight-normal">｜魔物《オーク》</span>
+                                                <span class="badge badge-light font-weight-normal">｜親指を立てて《サムズアップで》</span>
+                                                <span class="badge badge-light font-weight-normal">｜蜘蛛の少女《アラクネ》</span>
+                                                <span class="badge badge-light font-weight-normal">｜小鬼《インプ》</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>059.md</td>
+                                        <td>
+                                                <span class="badge badge-light font-weight-normal">｜緑の格子盤《グリーンボード》</span>
+                                                <span class="badge badge-light font-weight-normal">｜紅の宝庫《レッドマイン》</span>
+                                                <span class="badge badge-light font-weight-normal">｜プロジェクトマネージャー《PM》</span>
+                                                <span class="badge badge-light font-weight-normal">｜会議《ミーティング》</span>
+                                                <span class="badge badge-light font-weight-normal">｜紅の宝庫《あなたたち》</span>
+                                                <span class="badge badge-light font-weight-normal">｜国《プロジェクト》</span>
+                                                <span class="badge badge-light font-weight-normal">｜魔族《ヒト》</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>060.md</td>
+                                        <td>
+                                                <span class="badge badge-light font-weight-normal">｜仕組み《システム》</span>
+                                                <span class="badge badge-light font-weight-normal">｜藤倉《ふじくら》</span>
+                                                <span class="badge badge-light font-weight-normal">｜紅子《こうこ》</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>061.md</td>
+                                        <td>
+                                                <span class="badge badge-light font-weight-normal">｜緑の格子盤《グリーンボード》</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>062.md</td>
+                                        <td>
+                                                <span class="badge badge-light font-weight-normal">｜魔族《エンジニア》</span>
+                                                <span class="badge badge-light font-weight-normal">｜人工頭脳《AI》</span>
+                                                <span class="badge badge-light font-weight-normal">｜魔族《エンジニア》</span>
+                                                <span class="badge badge-light font-weight-normal">｜人工頭脳《AI》</span>
+                                                <span class="badge badge-light font-weight-normal">｜戦い《プロジェクト》</span>
+                                                <span class="badge badge-light font-weight-normal">｜会議《ミーティング》</span>
+                                                <span class="badge badge-light font-weight-normal">｜新規《New》</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>063.md</td>
+                                        <td>
+                                                <span class="badge badge-light font-weight-normal">｜Redmine《レッドマイン》</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>064.md</td>
+                                        <td>
+                                                <span class="badge badge-light font-weight-normal">｜進行中《Assigned》</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+    
+            </div>
+        
+        </div>
+
+    </div>
+</body>
+</html>
