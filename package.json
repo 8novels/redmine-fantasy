@@ -4,19 +4,21 @@
   "description": "Redmineで始める異世界人心掌握術",
   "config": {
     "epub_title": "Redmineで始める異世界人心掌握術",
+    "epub_title_file_as": "れっどまいんではじめるいせかいじんしんしょうあくじゅつ",
     "epub_author": "足羽川永都",
+    "epub_author_file_as": "あすわがわえいと",
     "epub_publisher": "8novels",
-    "epub_lang": "ja",
-    "epub_tocTitle": "目次",
-    "epub_appendChapterTitles": false
+    "epub_publisher_file_as": "えいとのべるず"
   },
   "scripts": {
     "novel-build": "novel-build",
-    "novel-build-epub": "novel-build-epub",
     "novel-build-narou": "novel-build-narou",
     "novel-build-note": "novel-build-note",
     "novel-build-novelabo": "novel-build-novelabo",
     "novel-proofread": "novel-proofread",
+    "novel-publish": "novel-publish",
+    "novel-publish-horizontal": "novel-publish-horizontal",
+    "novel-publish-vertical": "novel-publish-vertical",
     "novel-report": "novel-report"
   },
   "repository": {
@@ -30,6 +32,6 @@
   },
   "homepage": "https://github.com/8novels/redmine-fantasy#readme",
   "dependencies": {
-    "novel-builder": "latest"
+    "novel-builder": "0.2.7"
   }
 }
