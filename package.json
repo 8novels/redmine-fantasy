@@ -32,6 +32,6 @@
   },
   "homepage": "https://github.com/8novels/redmine-fantasy#readme",
   "dependencies": {
-    "novel-builder": "0.2.7"
+    "novel-builder": "latest"
   }
 }
