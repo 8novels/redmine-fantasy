@@ -15,6 +15,11 @@
     "novel-build-narou": "novel-build-narou",
     "novel-build-note": "novel-build-note",
     "novel-build-novelabo": "novel-build-novelabo",
+    "novel-png": "novel-png",
+    "novel-png-square": "novel-png-square",
+    "novel-png-paperback": "novel-png-paperback",
+    "novel-png-note-header": "novel-png-note-header",
+    "novel-png-twitter-header": "novel-png-twitter-header",
     "novel-proofread": "novel-proofread",
     "novel-publish": "novel-publish",
     "novel-publish-horizontal": "novel-publish-horizontal",
@@ -32,6 +37,7 @@
   },
   "homepage": "https://github.com/8novels/redmine-fantasy#readme",
   "dependencies": {
-    "novel-builder": "latest"
+    "novel-builder": "latest",
+    "textlint-rule-general-novel-style-ja": "^1.3.0"
   }
 }
