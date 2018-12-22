@@ -12,6 +12,9 @@
   },
   "scripts": {
     "novel-build": "novel-build",
+    "novel-build-alphapolis": "novel-build-alphapolis",
+    "novel-build-hameln": "novel-build-hameln",
+    "novel-build-kakuyomu": "novel-build-kakuyomu",
     "novel-build-narou": "novel-build-narou",
     "novel-build-note": "novel-build-note",
     "novel-build-novelabo": "novel-build-novelabo",
